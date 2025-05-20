@@ -2,9 +2,8 @@
 title: "moniqueallyson.github.io"
 ---
 
-This is a Quarto website.
+![](images/headshot.jpg)
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
 
 ```{r}
 
