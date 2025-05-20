@@ -3,7 +3,6 @@ title: "Monique Allyson Hernandez"
 image: headshot.jpg
 toc: false
 format: html
-
 about:
   template: jolla
   image-shape: round
