@@ -1,11 +1,11 @@
 ---
 title: "Monique Allyson Hernandez"
-image: image/headshot
+image: headshot
 toc: false
 format: html
 about:
   template: jolla
-  image-shape: rectangle
+  image-shape: round
   image-width: 17em
   links:
     - text: GitHub
