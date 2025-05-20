@@ -1,6 +1,6 @@
 ---
 title: "Monique Allyson Hernandez"
-image: images/headsho.jpeg
+image: images/headshot.jpg
 toc: false
 format: html
 
