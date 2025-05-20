@@ -1,12 +1,16 @@
 ---
-title: "moniqueallyson.github.io"
+title: "Monique Allyson Hernandez"
+image: images/headsho.jpeg
+toc: false
+format: html
+
+about:
+  template: jolla
+  image-shape: round
+  image-width: 17em
+  links:
+    - text: GitHub
+      href: https://github.com/moniqueallyson
+    - text: Email
+      href: mailto:moniqueallysonhernandez@gmail.com
 ---
-
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-
-```{r}
-
-
-```

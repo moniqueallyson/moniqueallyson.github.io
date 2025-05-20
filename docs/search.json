@@ -4,13 +4,13 @@
     "href": "about.html",
     "title": "About Me",
     "section": "",
-    "text": "An undergraduate at UCSB studying Environmental Studies B.S who has been vegan for three years, interested in social justice, and a progressive and sustainanble future.\n\n1 + 1\n\n[1] 2"
+    "text": "Graduating Spring 2025, I will be departing from UCSB with a B.S. in Environmental Studies. I am an advocate for sustainability and currently practice a vegan lifestyle which is integrated into my work through research and creative projects. Aside from my scientific background, I combine research with documentaries, poetic writings, and podcast. On my free time, I enjoy spending time in nature, reading, and socializing with friends and family."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "moniqueallyson.github.io",
+    "title": "Monique Allyson Hernandez",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "about: template: jolla image-shape: round image-width: 17em links: - text: Email href: mailto::moniqueallysonhernandez@gmail.com —"
   }
 ]
