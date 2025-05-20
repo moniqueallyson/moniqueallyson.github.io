@@ -2,7 +2,7 @@
 title: "moniqueallyson.github.io"
 ---
 
-![](images/headshot.jpg)
+![](image/headshot.jpg)
 
 
 ```{r}
