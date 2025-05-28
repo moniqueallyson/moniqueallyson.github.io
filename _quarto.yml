@@ -8,9 +8,19 @@ website:
   title: "moniqueallyson.github.io"
   navbar:
     left:
-      - href: index.qmd
+      - href: "index.qmd"
         text: Home
-      - about.qmd
+      - href: "about.qmd"
+        text: About Me
+      - href: "Projects.qmd"
+        text: Projects
+      - href: "Personal Work.qmd"
+        text: Personal Work
+      - href: "exp.qmd"
+        text: Experience
+      - href: "resume.qmd"
+        text: Resume
+
 
 format:
   html:
