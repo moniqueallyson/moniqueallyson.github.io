@@ -13,6 +13,8 @@ website:
     left:
       - href: index.qmd
         text: Home
+        href: about.qmd
+        text: About Me
       - href: Projects.qmd
         text: Projects
       - href: Personal Work.qmd
