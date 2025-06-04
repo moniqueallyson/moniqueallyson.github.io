@@ -4,17 +4,18 @@ project:
   resources:
     - .nojekyll
 
-website:  
+website:
+  title: "Monique Allyson Hernandez"
   navbar:
     pinned: true
     left:
-      - href: "index.qmd"
+      - href: index.qmd
         text: Home
-      - href: "Projects.qmd"
+      - href: Projects.qmd
         text: Projects
-      - href: "Personal Work.qmd"
+      - href: Personal Work.qmd
         text: Poetry
-      - href: "exp.qmd"
+      - href: exp.qmd
         text: Experience
 
 
