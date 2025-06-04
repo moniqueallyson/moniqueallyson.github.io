@@ -4,14 +4,12 @@ project:
   resources:
     - .nojekyll
 
-website:
-  title: "moniqueallyson.github.io"
+website:  
   navbar:
+    pinned: true
     left:
       - href: "index.qmd"
         text: Home
-      - href: "about.qmd"
-        text: About Me
       - href: "Projects.qmd"
         text: Projects
       - href: "Personal Work.qmd"
@@ -22,7 +20,8 @@ website:
 
 format:
   html:
-    theme: cosmo
+    theme: minty
+    mainfont: quicksand
     css: styles.css
     toc: true
     pagelayout: full

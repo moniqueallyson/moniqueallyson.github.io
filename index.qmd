@@ -5,16 +5,20 @@ image: image/headshot.jpg
 toc: false
 format: html
 about:
+  id: hero-heading
   template: jolla
-  image-shape: rectangle
-  image-width: 17em
+  image-shape: rounded
+  image-width: 17rem
   links:
     - text: GitHub
       href: https://github.com/moniqueallyson
     - text: Email
       href: mailto:moniqueallysonhernandez@gmail.com
 ---
+
 ## About Me
 
-Hi, welcome to my page! I'm a proud Gaucho, graduating Spring class of 20225 and will be departing with a B.S. in Environmental Studies. I am an advocate for sustainability and currently practice a vegan lifestyle which is integrated into my work through research and creative projects. Utilizing both my scientific and humanities background, I combine research with documentaries, poetic writings, and podcast. On my free time, I enjoy spending time in nature, reading, cuddling with my dog as well as socializing with my friends and family.
+Hi, welcome to my page!
+
+I'm a proud Gaucho, graduating class of 20225 this spring and will be departing happily with a B.S. in Environmental Studies. I am an advocate for sustainability and currently practice a vegan lifestyle which is integrated into my work through research and creative projects. Utilizing both my scientific and humanities background, I combine research with documentaries, poetic writings, and podcast. On my free time, I enjoy spending time in nature, reading, cuddling with my dog as well as socializing with my friends and family.
 
