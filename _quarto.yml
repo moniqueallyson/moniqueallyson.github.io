@@ -10,12 +10,13 @@ website:
     left:
       - href: "index.qmd"
         text: Home
-        href: "Personal Work.qmd"
-        text: Poetry
       - href: "Projects.qmd"
         text: Projects
+      - href: "Personal Work.qmd"
+        text: Poetry
       - href: "exp.qmd"
         text: Experience
+
 
 
 format:
