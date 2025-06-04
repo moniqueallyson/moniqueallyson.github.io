@@ -6,8 +6,10 @@ project:
 
 website:
   title: "Monique Allyson Hernandez"
+  favicon: image/Monique.png
   navbar:
     pinned: true
+    logo: image/Monique.png
     left:
       - href: index.qmd
         text: Home
