@@ -5,7 +5,7 @@ toc: false
 format: html
 about:
   template: jolla
-  image-shape: round
+  image-shape: rectangle
   image-width: 17em
   links:
     - text: GitHub
@@ -13,3 +13,11 @@ about:
     - text: Email
       href: mailto:moniqueallysonhernandez@gmail.com
 ---
+<h1 class="block-title pink-text">
+About Me
+</h1>
+<p>
+Hi, welcome to my page! I'm a proud Gaucho, graduating Spring class of 20225 and will be departing with a B.S. in Environmental Studies. I am an advocate for sustainability and currently practice a vegan lifestyle which is integrated into my work through research and creative projects. 
+
+Utilizing both my scientific and humanities background, I combine research with documentaries, poetic writings, and podcast. On my free time, I enjoy spending time in nature, reading, cuddling with my dog as well as socializing with my friends and family.
+</p>
