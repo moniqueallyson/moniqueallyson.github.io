@@ -1,5 +1,6 @@
 ---
 title: "About Me"
+draft: true
 ---
 
 Graduating Spring 2025, I will be departing from UCSB with a B.S. in Environmental Studies. I am an advocate for sustainability and currently practice a vegan lifestyle which is integrated into my work through research and creative projects. Aside from my scientific background, I combine research with documentaries, poetic writings, and podcast. On my free time, I enjoy spending time in nature, reading, and socializing with friends and family.
