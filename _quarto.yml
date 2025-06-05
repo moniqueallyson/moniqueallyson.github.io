@@ -20,7 +20,7 @@ website:
       - href: Personal Work.qmd
         text: Poetry
       - text: Resume
-        href: Monique_Resume2025.pdf
+        href: docs/Monique_Resume2025.pdf
         target: "_blank"
 
 
