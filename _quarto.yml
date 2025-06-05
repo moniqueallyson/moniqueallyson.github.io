@@ -13,14 +13,15 @@ website:
     left:
       - href: index.qmd
         text: Home
-        href: about.qmd
+      - href: about.qmd
         text: About Me
       - href: Projects.qmd
         text: Projects
       - href: Personal Work.qmd
         text: Poetry
-      - href: exp.qmd
-        text: Experience
+      - text: Resume
+        href: Monique_Resume2025.pdf
+        target: "_blank"
 
 
 
