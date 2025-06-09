@@ -1,7 +1,6 @@
 ---
 title: "Projects"
 format: html
-toc: false
 ---
 # Education from UC Santa Barbara
 
