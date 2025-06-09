@@ -1,5 +1,6 @@
 ---
 title: "Poetry"
+title-block: false
 format:
   html:
     css: https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css
