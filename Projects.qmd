@@ -24,7 +24,9 @@ For my Critical Thinking course (ES 40), we were tasked to do a research project
 
 ## Yoga to Manage Chronic Pain
 
-For my Data Science class, we were tasked to log personal data from our lives for the quarter or roughly 30 days. For this project, I decided to analyze my <span style="color: hotpink">**yoga routine**</span> and how it affects my chronic back pain. I logged the days I did and didn't do yoga and used a scale from 1-10 to track the chronic pain.
+For my Data Science class, we were tasked with logging personal data from our lives over the course of the quarter (roughly 30 days). I decided to analyze my <span style="color: hotpink">**yoga routine**</span> and how it affects my chronic back pain. I tracked the days I did or didn’t practice yoga and recorded my pain levels using a scale from 1 to 10.
+
+Overall, the project was a powerful motivation to care for both my mental and physical health while learning how to work with real data. I’ve found that yoga and consistent movement can significantly reduce my pain. Unsurprisingly, the data showed that the days I skipped yoga were also the days I experienced the highest levels of discomfort.
 
 ```{r, message=FALSE, warning=FALSE, error=FALSE, echo=TRUE}
 
