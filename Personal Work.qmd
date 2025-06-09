@@ -1,6 +1,5 @@
 ---
 title: "Poetry"
-toc: false
 format:
   html:
     css: https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css
@@ -35,12 +34,11 @@ format:
 }
 </style>
 
-# Original Poems
+The four excerpts below are from my poetry book titled [*Bullseye Tiger*]{style="color: orange"} that I released briefly on Amazon in 2021. I chose to share these because they contain elements of nature, environmentalism, and justice — the themes I’ve studied at UCSB the past two years. In each poem, nature is the heart of the writing and advocate for the injustices that burden both humans and animals.
 
-The four excerpts below are from my poetry book titled [*Bullseye Tiger*]{style="color: orange"} that I released briefly on Amazon in 2021. I chose to share these because they contain elements of nature, environmentalism, and justice — the themes I’ve studied at UCSB the past two years.
 
 ---
-
+## Original Poems
 <div class="poem-box">
   <a href="at-rest.html" class="poem-link">At Rest</a>
   <div style="margin-top: 0.4rem; color: #555; font-style: italic; font-size: 0.9rem;">
@@ -71,7 +69,8 @@ The four excerpts below are from my poetry book titled [*Bullseye Tiger*]{style=
 
 ---
 
-## Bullseye Tiger: A Collection of Poems
+## Gallery
+###Bullseye Tiger: A Collection of Poems
 
 ::: {style="display: grid; grid-template-columns: 1fr; gap: 30px; max-width: 700px; margin: 2rem auto;"}
 

@@ -7,9 +7,10 @@ format: html
 On this page, I focus on the projects that stem from my life in academia as a <span style="color: green">**vegan person**</span> and a <span style="color: hotpink">**yogi enthusiast**</span>. I have been challenged by my professors to utilize my passion and skills to create meaningful projects that can extend outside the classroom into the work field without sacrificing ourselves as individuals. Thankfully, I have many passions, interests, hobbies, and dreams to generate multiple projects throughout my years at <span style="color: blue">**UCSB**</span>.
 
 
-## Why Veganism Matters
+## Project 1
+### Why Veganism Matters
 
-For my Critical Thinking course (ES 40), we were tasked to do a research project of our choice and interest throughout the entire quarter. As a person who was majoring in environmental studies, I was open to hearing from classmates and other peers about their <span style="color: green">**dietary choices and conflicting environmental beliefs**</span>. I did research on the impact that both the agricultural and livestock industry have on the environment and the choices individuals can make to lessen it from their own home. I provided perspectives from different backgrounds, both cultural and economical through personal interviews as to provide insight on the<span style="color: green"> **barriers that may be preventing environmentally conscious people from lessening their animal-based choices**</span>. I also highlights local resources and aid for those who are seeking to start their own personal journey of reducing their carbon foot-print or just lower their animal-based food intake.
+For my Critical Thinking course (ES 40), we were tasked to do a research project of our choice and interest throughout the entire quarter. As a person who was majoring in environmental studies, I was open to hearing from classmates and other peers about their <span style="color: green">**dietary choices and conflicting environmental beliefs**</span>. I did research on the impact that both the agricultural and livestock industry have on the environment and the choices individuals can make to lessen it from their own home. I provided perspectives from different backgrounds, both cultural and economical through personal interviews as to provide insight on the<span style="color: green"> **barriers that may be preventing environmentally conscious people from lessening their animal-based choices**</span>. I also highlight local resources and aid for those who are seeking to start their own personal journey of reducing their carbon foot-print or just lower their animal-based food intake.
 
 **Below is my research-based documentary:**
 
@@ -22,7 +23,8 @@ For my Critical Thinking course (ES 40), we were tasked to do a research project
     allowfullscreen> </iframe>
 :::
 
-## Yoga to Manage Chronic Pain
+## Project 2
+### Yoga to Manage Chronic Pain
 
 For my Data Science class, we were tasked with logging personal data from our lives over the course of the quarter (roughly 30 days). I decided to analyze my <span style="color: hotpink">**yoga routine**</span> and how it affects my chronic back pain. I tracked the days I did or didn’t practice yoga and recorded my pain levels using a scale from 1 to 10.
 
