@@ -26,7 +26,7 @@ For my Critical Thinking course (ES 40), we were tasked to do a research project
 
 For my Data Science class, we were tasked to log personal data from our lives for the quarter or roughly 30 days. For this project, I decided to analyze my <span style="color: hotpink">**yoga routine**</span> and how it affects my chronic back pain. I logged the days I did and didn't do yoga and used a scale from 1-10 to track the chronic pain.
 
-```{r, message=FALSE}
+```{r, message=FALSE, warning=FALSE, error=FALSE, echo=TRUE}
 
 library(tidyverse)
 library(janitor)
