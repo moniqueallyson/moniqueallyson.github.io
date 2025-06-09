@@ -31,6 +31,8 @@ For my Data Science class, we were tasked to log personal data from our lives fo
 library(tidyverse)
 library(janitor)
 library(plotly)
+library(htmlwidgets)
+
 
 mydata <- read.csv("Data.csv") %>%
   clean_names() %>%
