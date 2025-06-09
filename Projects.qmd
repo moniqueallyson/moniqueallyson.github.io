@@ -24,5 +24,52 @@ For my Critical Thinking course (ES 40), we were tasked to do a research project
 
 ## Yoga to Manage Chronic Pain
 
-For my Data Science class, we were tasked to log personal data from our lives for the quarter or roughly 30 days. For this project, I decided to analyze my yoga routine and how it affects my chronic back pain. I logged the days I did and didn't do yoga and used a scale from 1-10 to track the chronic pain.
+For my Data Science class, we were tasked to log personal data from our lives for the quarter or roughly 30 days. For this project, I decided to analyze my <span style="color: hotpink">**yoga routine**</span> and how it affects my chronic back pain. I logged the days I did and didn't do yoga and used a scale from 1-10 to track the chronic pain.
+
+```{r, message=FALSE}
+
+library(tidyverse)
+library(janitor)
+library(plotly)
+
+mydata <- read.csv("Data.csv") %>%
+  clean_names() %>%
+  mutate(
+    tooltip_text = paste0(
+      "Yoga Session: ", did_you_do_yoga, "<br>",
+      "Pain Level After: ", pain_level_after)
+  )
+
+p <- ggplot(mydata, aes(
+  x = did_you_do_yoga,
+  y = pain_level_after,
+  color = pain_level_after,
+  text = tooltip_text
+)) +
+  geom_jitter(width = 0.15, size = 2.5, alpha = 0.6) +
+  stat_summary(geom = "point", fun = mean, color = "#4a4a4a", size = 3) +
+  scale_color_gradient(low = "#f9f871", high = "#7c3f98") +  # yellow to purple gradient
+  labs(
+    x = "Did You Do Yoga?",
+    y = "Pain Level After Yoga",
+    color = "Pain Level"
+  ) +
+  theme_minimal(base_size = 13) +
+  theme(
+    plot.background = element_rect(fill = "#ffe6eb", color = NA),        # baby pink background
+    panel.background = element_rect(fill = "#ffffff", color = "#ffb6c1"), # white panel with pink border
+    panel.grid.major = element_line(color = "#ffccd5"),
+    panel.grid.minor = element_blank()
+  )
+
+ggplotly(p, tooltip = "text") %>%
+  layout(
+    hoverlabel = list(font = list(size = 14)),
+    annotations = list()  # removes unnecessary annotations
+  )
+
+
+
+
+```
 
