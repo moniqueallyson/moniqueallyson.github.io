@@ -36,8 +36,8 @@ library(plotly)
 library(htmlwidgets)
 
 
-mydata <- read.csv("Data.csv") %>%
-  clean_names() %>%
+mydata <- read.csv("Data.csv") |>
+  clean_names() |>
   mutate(
     tooltip_text = paste0(
       "Yoga Session: ", did_you_do_yoga, "<br>",
@@ -66,7 +66,7 @@ p <- ggplot(mydata, aes(
     panel.grid.minor = element_blank()
   )
 
-ggplotly(p, tooltip = "text") %>%
+ggplotly(p, tooltip = "text") |>
   layout(
     hoverlabel = list(font = list(size = 14)),
     annotations = list())
