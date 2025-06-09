@@ -1,8 +1,6 @@
 ---
 title: "Environmental Poetry"
-format:
-  html:
-    lightbox: true
+format:html
 ---
 
 The three excerpts below are from my poetry book titled *Bullseye Tiger* that I released for a brief moment on Amazon in 2021. I chose to share these because they have elements of nature, environmentalism, and justice — what I've studied at UCSB the past two years. These were written before I was vegan; my lifestyle changed in 2022.
