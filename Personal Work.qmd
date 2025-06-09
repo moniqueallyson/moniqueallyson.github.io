@@ -8,24 +8,65 @@ format:
       in-header: lightbox-scripts.html
 ---
 
+<style>
+.poem-link {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #FF6600;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.poem-link:hover {
+  text-decoration: underline;
+}
+.poem-box {
+  background: #fffdf8;
+  border-left: 4px solid orange;
+  padding: 1rem 1.2rem;
+  margin: 2rem auto;
+  max-width: 700px;
+  font-family: Georgia, serif;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  white-space: pre-line;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+</style>
+
 # Original Poems
 
-The four excerpts below are from my poetry book titled [*Bullseye Tiger*]{style="color: orange"} that I released briefly on Amazon in 2021. I chose to share these because they have elements of nature, environmentalism, and justice — what I've studied at UCSB the past two years. Each poem contains sentiments about the preservation of both nature and creature. An admiration for the world that nurtures and feeds us.
+The four excerpts below are from my poetry book titled [*Bullseye Tiger*]{style="color: orange"} that I released briefly on Amazon in 2021. I chose to share these because they contain elements of nature, environmentalism, and justice — the themes I’ve studied at UCSB the past two years.
+
+---
 
 <div class="poem-box">
   <a href="at-rest.html" class="poem-link">At Rest</a>
+  <div style="margin-top: 0.4rem; color: #555; font-style: italic; font-size: 0.9rem;">
+    (Click the title to read full poem)
+  </div>
 </div>
 
 <div class="poem-box">
   <a href="water.html" class="poem-link">Water</a>
+  <div style="margin-top: 0.4rem; color: #555; font-style: italic; font-size: 0.9rem;">
+    (Click the title to read full poem)
+  </div>
 </div>
 
 <div class="poem-box">
   <a href="tourist.html" class="poem-link">Tourist</a>
+  <div style="margin-top: 0.4rem; color: #555; font-style: italic; font-size: 0.9rem;">
+    (Click the title to read full poem)
+  </div>
 </div>
 
 <div class="poem-box">
   <a href="bricks-and-walnuts.html" class="poem-link">Bricks and Walnuts</a>
+  <div style="margin-top: 0.4rem; color: #555; font-style: italic; font-size: 0.9rem;">
+    (Click the title to read full poem)
+  </div>
 </div>
 
 ---
@@ -57,4 +98,5 @@ The four excerpts below are from my poetry book titled [*Bullseye Tiger*]{style=
   </a>
 
 </div>
+
 :::
