@@ -69,8 +69,4 @@ ggplotly(p, tooltip = "text") %>%
     hoverlabel = list(font = list(size = 14)),
     annotations = list())
 
-
-
-
 ```
-
