@@ -1,0 +1,66 @@
+---
+title: "Water"
+format: html
+---
+
+<style>
+.poem-content {
+  max-width: 600px;
+  margin: 3rem auto;
+  font-family: Georgia, serif;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  white-space: pre-line;
+  background: #fffdf8;
+  padding: 1.5rem 2rem;
+  border-left: 6px solid orange;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.07);
+}
+.back-link {
+  display: block;
+  margin: 1rem auto 3rem;
+  max-width: 600px;
+  color: orange;
+  text-decoration: none;
+  font-weight: bold;
+}
+.back-link:hover {
+  text-decoration: underline;
+}
+</style>
+
+<a href="poetry.html" class="back-link">← Back to Poems</a>
+
+<div class="poem-content">
+Water red as a beet,
+that's never kissed skies,
+but has kissed animals' feet.
+
+It kisses them with knives,
+with red lips,
+thunderous lips,
+cancerous lips that steal lives.
+
+A bison walks and splashes,
+ignoring the local vultures,
+the molding of birds and bats.
+
+Plus, the flamingos, bright pink,
+frozen and displayed like glass.
+
+There is rope around a neck,
+and blood stains in the past.
+
+There's blood by their head,
+as they are stuck in battle,
+stuck as gum dressed in dread.
+
+Nothing moves or progresses,
+but the breath of peace,
+ound in complete stillness.
+
+Shaking off the lake's clay,
+dusting off the red mineral,
+just to survive another day.
+</div>

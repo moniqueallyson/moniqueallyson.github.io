@@ -1,0 +1,45 @@
+---
+title: "At Rest"
+format: html
+---
+
+<style>
+.poem-content {
+  max-width: 600px;
+  margin: 3rem auto;
+  font-family: Georgia, serif;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  white-space: pre-line;
+  background: #fffdf8;
+  padding: 1.5rem 2rem;
+  border-left: 6px solid orange;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.07);
+}
+.back-link {
+  display: block;
+  margin: 1rem auto 3rem;
+  max-width: 600px;
+  color: orange;
+  text-decoration: none;
+  font-weight: bold;
+}
+.back-link:hover {
+  text-decoration: underline;
+}
+</style>
+
+<a href="poetry.html" class="back-link">← Back to Poems</a>
+
+<div class="poem-content">
+On planet Earth,
+I watched your eyes,
+land on beauty,
+inhale inspiration,
+as one of a kind, can't be cloned,
+replicated or duped,
+only one world,
+where you exist,
+to ruminate quietly.
+</div>

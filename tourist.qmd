@@ -1,0 +1,53 @@
+---
+title: "Tourist"
+format: html
+---
+
+<style>
+.poem-content {
+  max-width: 600px;
+  margin: 3rem auto;
+  font-family: Georgia, serif;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  white-space: pre-line;
+  background: #fffdf8;
+  padding: 1.5rem 2rem;
+  border-left: 6px solid orange;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.07);
+}
+.back-link {
+  display: block;
+  margin: 1rem auto 3rem;
+  max-width: 600px;
+  color: orange;
+  text-decoration: none;
+  font-weight: bold;
+}
+.back-link:hover {
+  text-decoration: underline;
+}
+</style>
+
+<a href="poetry.html" class="back-link">← Back to Poems</a>
+
+<div class="poem-content">
+There are colors in the vast cosmos,
+that don't compare to the hues around you,
+because I have seen only darkness up there,
+while your skin reminds me of coffee beans,
+and a caramel candy rivaling your sweetness.
+
+You persuade me with your sights,
+settling for sunsets that meet river water,
+where wildlife buzzes along our shoulders,
+sniffing for food or lodging— maybe forgiveness,
+until it pleads to us in bloody bleats and huffs.
+
+The animals ask for gentleness in humanity,
+since rumors have spread in a packed form,
+resembling light that trickles in so slightly,
+with descriptions of mankind's treacheries,
+the tenacity-abandon then colonize elsewhere.
+</div>

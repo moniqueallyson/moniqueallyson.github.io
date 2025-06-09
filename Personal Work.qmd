@@ -1,10 +1,60 @@
 ---
-title: "Environmental Poetry"
-format:html
+title: "Poetry"
+toc: false
+format:
+  html:
+    css: https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css
+    includes:
+      in-header: lightbox-scripts.html
 ---
 
-The three excerpts below are from my poetry book titled *Bullseye Tiger* that I released for a brief moment on Amazon in 2021. I chose to share these because they have elements of nature, environmentalism, and justice — what I've studied at UCSB the past two years. These were written before I was vegan; my lifestyle changed in 2022.
+# Original Poems
 
-![Water](IMG_6942.jpg){group="test" width="30%"}
-![Tourist](IMG_6943.jpg){group="test" width="30%"}
-![Bricks and Walnuts](IMG_6944.jpg){group="test" width="30%"}
+The four excerpts below are from my poetry book titled [*Bullseye Tiger*]{style="color: orange"} that I released briefly on Amazon in 2021. I chose to share these because they have elements of nature, environmentalism, and justice — what I've studied at UCSB the past two years. Each poem contains sentiments about the preservation of both nature and creature. An admiration for the world that nurtures and feeds us.
+
+<div class="poem-box">
+  <a href="at-rest.html" class="poem-link">At Rest</a>
+</div>
+
+<div class="poem-box">
+  <a href="water.html" class="poem-link">Water</a>
+</div>
+
+<div class="poem-box">
+  <a href="tourist.html" class="poem-link">Tourist</a>
+</div>
+
+<div class="poem-box">
+  <a href="bricks-and-walnuts.html" class="poem-link">Bricks and Walnuts</a>
+</div>
+
+---
+
+## Bullseye Tiger: A Collection of Poems
+
+::: {style="display: grid; grid-template-columns: 1fr; gap: 30px; max-width: 700px; margin: 2rem auto;"}
+
+<a href="bullseye.jpg" data-lightbox="gallery" data-title="Bullseye Tiger Cover">
+  <img src="bullseye.jpg" alt="Bullseye Tiger Cover" style="width: 100%; cursor: pointer; border-radius: 12px;" />
+</a>
+
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
+
+  <a href="IMG_6941.jpg" data-lightbox="gallery" data-title="At Rest">
+    <img src="IMG_6941.jpg" alt="At Rest" style="width: 100%; cursor: pointer; border-radius: 8px;" />
+  </a>
+
+  <a href="IMG_6942.jpg" data-lightbox="gallery" data-title="Water">
+    <img src="IMG_6942.jpg" alt="Water" style="width: 100%; cursor: pointer; border-radius: 8px;" />
+  </a>
+
+  <a href="IMG_6943.jpg" data-lightbox="gallery" data-title="Tourist">
+    <img src="IMG_6943.jpg" alt="Tourist" style="width: 100%; cursor: pointer; border-radius: 8px;" />
+  </a>
+
+  <a href="IMG_6944.jpg" data-lightbox="gallery" data-title="Bricks and Walnuts">
+    <img src="IMG_6944.jpg" alt="Bricks and Walnuts" style="width: 100%; cursor: pointer; border-radius: 8px;" />
+  </a>
+
+</div>
+:::

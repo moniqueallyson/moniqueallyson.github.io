@@ -3,6 +3,7 @@ title: "About Me"
 format: html
 ---
 
+
 There's a whole multitude of hobbies, passions, and interests that I hold dearly to my heart. I would love to display it all for everyone, but the three things that create who I am to my core is: Traveling, Veganism, and my dog Raaja.
 
 ### My Adventures around the world

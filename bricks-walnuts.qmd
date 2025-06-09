@@ -1,0 +1,61 @@
+---
+title: "Bricks and Walnuts"
+format: html
+---
+
+<style>
+.poem-content {
+  max-width: 600px;
+  margin: 3rem auto;
+  font-family: Georgia, serif;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  white-space: pre-line;
+  background: #fffdf8;
+  padding: 1.5rem 2rem;
+  border-left: 6px solid orange;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.07);
+}
+.back-link {
+  display: block;
+  margin: 1rem auto 3rem;
+  max-width: 600px;
+  color: orange;
+  text-decoration: none;
+  font-weight: bold;
+}
+.back-link:hover {
+  text-decoration: underline;
+}
+</style>
+
+<a href="poetry.html" class="back-link">← Back to Poems</a>
+
+<div class="poem-content">
+There are birds in the neighbor's tree,
+it's the same tune from last year,
+I almost forgot birds could sing,
+summer has been too long and quiet,
+ever since the gardeners became barbers.
+
+In the heat as the kitchen swelled,
+we danced and wrote notes, bouncing ideas, 
+listening to the calls of jittery, young babes,
+being fed and cared for by their mothers.
+
+Their nest reminded me of a street I've lived on,
+a place lined with rows of crying pink trees,
+and tall silver walls stuffed with a mixture of families,
+a home overfilled with life like a pregnant belly button.
+
+Landlords demand a rent, wrote a letter,
+Dear tenants-Evacuate. 
+As if homelessness is an alternative.
+
+Birds don't pay rent and neither should you,
+on land that is the property of soil and carcass.
+
+You've been too quiet this summer,
+it may be time to begin again.
+</div>
