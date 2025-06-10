@@ -3,6 +3,7 @@ title: "Tourist"
 format: html
 ---
 
+```{=html}
 <style>
 .poem-content {
   max-width: 600px;
@@ -29,25 +30,14 @@ format: html
   text-decoration: underline;
 }
 </style>
+```
 
-<a href="poetry.html" class="back-link">← Back to Poems</a>
+<a href="Personal Work.html" class="back-link">← Back to Poems</a>
 
-<div class="poem-content">
-There are colors in the vast cosmos,
-that don't compare to the hues around you,
-because I have seen only darkness up there,
-while your skin reminds me of coffee beans,
-and a caramel candy rivaling your sweetness.
+::: poem-content
+There are colors in the vast cosmos, that don't compare to the hues around you, because I have seen only darkness up there, while your skin reminds me of coffee beans, and a caramel candy rivaling your sweetness.
 
-You persuade me with your sights,
-settling for sunsets that meet river water,
-where wildlife buzzes along our shoulders,
-sniffing for food or lodging— maybe forgiveness,
-until it pleads to us in bloody bleats and huffs.
+You persuade me with your sights, settling for sunsets that meet river water, where wildlife buzzes along our shoulders, sniffing for food or lodging— maybe forgiveness, until it pleads to us in bloody bleats and huffs.
 
-The animals ask for gentleness in humanity,
-since rumors have spread in a packed form,
-resembling light that trickles in so slightly,
-with descriptions of mankind's treacheries,
-the tenacity-abandon then colonize elsewhere.
-</div>
+The animals ask for gentleness in humanity, since rumors have spread in a packed form, resembling light that trickles in so slightly, with descriptions of mankind's treacheries, the tenacity-abandon then colonize elsewhere.
+:::

@@ -3,6 +3,7 @@ title: "Water"
 format: html
 ---
 
+```{=html}
 <style>
 .poem-content {
   max-width: 600px;
@@ -29,38 +30,24 @@ format: html
   text-decoration: underline;
 }
 </style>
+```
 
-<a href="poetry.html" class="back-link">← Back to Poems</a>
+<a href="Personal Work.html" class="back-link">← Back to Poems</a>
 
-<div class="poem-content">
-Water red as a beet,
-that's never kissed skies,
-but has kissed animals' feet.
+::: poem-content
+Water red as a beet, that's never kissed skies, but has kissed animals' feet.
 
-It kisses them with knives,
-with red lips,
-thunderous lips,
-cancerous lips that steal lives.
+It kisses them with knives, with red lips, thunderous lips, cancerous lips that steal lives.
 
-A bison walks and splashes,
-ignoring the local vultures,
-the molding of birds and bats.
+A bison walks and splashes, ignoring the local vultures, the molding of birds and bats.
 
-Plus, the flamingos, bright pink,
-frozen and displayed like glass.
+Plus, the flamingos, bright pink, frozen and displayed like glass.
 
-There is rope around a neck,
-and blood stains in the past.
+There is rope around a neck, and blood stains in the past.
 
-There's blood by their head,
-as they are stuck in battle,
-stuck as gum dressed in dread.
+There's blood by their head, as they are stuck in battle, stuck as gum dressed in dread.
 
-Nothing moves or progresses,
-but the breath of peace,
-ound in complete stillness.
+Nothing moves or progresses, but the breath of peace, ound in complete stillness.
 
-Shaking off the lake's clay,
-dusting off the red mineral,
-just to survive another day.
-</div>
+Shaking off the lake's clay, dusting off the red mineral, just to survive another day.
+:::
