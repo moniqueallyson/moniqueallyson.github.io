@@ -60,7 +60,7 @@ The four excerpts below are from my poetry book titled [*Bullseye Tiger*]{style=
 </div>
 
 <div class="poem-box">
-  <a href="bricks-and-walnuts.html" class="poem-link">Bricks and Walnuts</a>
+  <a href="bricks-walnuts.html" class="poem-link">Bricks and Walnuts</a>
   <div style="margin-top: 0.4rem; color: #555; font-style: italic; font-size: 0.9rem;">
     (Click the title to read full poem)
   </div>
