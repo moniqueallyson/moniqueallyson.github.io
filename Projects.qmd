@@ -30,6 +30,8 @@ For my Data Science class, we were tasked with logging personal data from our li
 
 Overall, the project was a powerful motivation to care for both my mental and physical health while learning how to work with real data. I’ve found that yoga and consistent movement can significantly reduce my pain. Unsurprisingly, the data showed that the days I skipped yoga were also the days I experienced the highest levels of discomfort.
 
+### Data Visualization Code
+
 ```{r, message=FALSE, warning=FALSE, error=FALSE, echo=TRUE}
 
 library(tidyverse)
