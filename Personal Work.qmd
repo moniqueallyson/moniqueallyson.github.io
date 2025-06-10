@@ -67,7 +67,6 @@ The four excerpts below are from my poetry book titled [*Bullseye Tiger*]{style=
 </div>
 
 ## Gallery
-### Bullseye Tiger: A Collection of Poems
 
 ::: {style="display: grid; grid-template-columns: 1fr; gap: 30px; max-width: 700px; margin: 2rem auto;"}
 
