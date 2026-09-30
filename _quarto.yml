@@ -17,14 +17,15 @@ website:
         text: About Me
       - href: Projects.qmd
         text: Projects
-      - href: Personal Work.qmd
-        text: Poetry
+
 
 
 
 format:
   html:
-    theme: minty
+    theme:
+      light: pulse
+      dark: vapor
     mainfont: quicksand
     css: styles.css
     toc: true
