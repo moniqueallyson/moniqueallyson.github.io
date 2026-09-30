@@ -15,7 +15,7 @@ about:
     - text: Email
       href: mailto:moniqueallysonhernandez@gmail.com
     - text: Linkedin
-      href: linkedin.com/in/moniqueallysonhernandez
+      href: https://linkedin.com/in/moniqueallysonhernandez
 ---
 
 ## About Me
