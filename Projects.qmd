@@ -1,16 +1,13 @@
 ---
-title: "Projects"
+title: ""
 format: html
 ---
-# Education from UC Santa Barbara
+# Bachelor of Science in Environmental Studies
 
-On this page, I focus on the projects that stem from my life in academia as a <span style="color: green">**vegan person**</span> and a <span style="color: hotpink">**yogi enthusiast**</span>. I have been challenged by my professors to utilize my passion and skills to create meaningful projects that can extend outside the classroom into the work field without sacrificing ourselves as individuals. Thankfully, I have many passions, interests, hobbies, and dreams to generate multiple projects throughout my years at <span style="color: blue">**UCSB**</span>.
+During my undergrad, many of the final projects were open to be creative such as podcasts, videos, or blog posts over video essays. Here I display a few of those projects.
 
 
-## Project 1
-### Why Veganism Matters
-
-For my Critical Thinking course (ES 40), we were tasked to do a research project of our choice and interest throughout the entire quarter. As a person who was majoring in environmental studies, I was open to hearing from classmates and other peers about their <span style="color: green">**dietary choices and conflicting environmental beliefs**</span>. I did research on the impact that both the agricultural and livestock industry have on the environment and the choices individuals can make to lessen it from their own home. I provided perspectives from different backgrounds, both cultural and economical through personal interviews as to provide insight on the<span style="color: green"> **barriers that may be preventing environmentally conscious people from lessening their animal-based choices**</span>. I also highlight local resources and aid for those who are seeking to start their own personal journey of reducing their carbon foot-print or just lower their animal-based food intake.
+## {{< fa youtube title="youtube" >}} Documentary on Environmental Veganism
 
 **Below is my research-based documentary:**
 
@@ -22,6 +19,8 @@ For my Critical Thinking course (ES 40), we were tasked to do a research project
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen> </iframe>
 :::
+
+For my Critical Thinking course (ES 40), we were tasked to do a research project of our choice and interest throughout the entire quarter. As a person who was majoring in environmental studies, I was open to hearing from classmates and other peers about their <span style="color: green">**dietary choices and conflicting environmental beliefs**</span>. I did research on the impact that both the agricultural and livestock industry have on the environment and the choices individuals can make to lessen it from their own home. I provided perspectives from different backgrounds, both cultural and economical through personal interviews as to provide insight on the<span style="color: green"> **barriers that may be preventing environmentally conscious people from lessening their animal-based choices**</span>. I also highlight local resources and aid for those who are seeking to start their own personal journey of reducing their carbon foot-print or just lower their animal-based food intake.
 
 ## Project 2
 ### Yoga to Manage Chronic Pain

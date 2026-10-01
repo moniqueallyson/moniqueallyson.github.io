@@ -1,29 +1,26 @@
 ---
-title: "Monique Allyson Hernandez"
+title: ""
 title-block-banner: true
 image: mo.jpg
 toc: false
 format: html
 about:
-  id: hero-heading
-  template: trestles
-  image-shape: rounded
-  image-width: 25rem
+  template: jolla
+  image-shape: round
+  image-width: 15rem
   links:
     - text: GitHub
       href: https://github.com/moniqueallyson
+      target: _blank
+      icon: github
     - text: Email
       href: mailto:moniqueallysonhernandez@gmail.com
+      icon: envelope
     - text: Linkedin
       href: https://linkedin.com/in/moniqueallysonhernandez
+      target: _blank
 ---
 
-## About Me
+# Welcome!
 
-My name is Monique and I originate from the Los Angeles area, though I consider anywhere my loved ones are at my home. 
-
-Currently, I am pursuing a Master in Environmental Data Science at Bren School of Environmental Science and Managment located within the University of California, Santa Barbabra (UCSB). Thankfully, I was able to return to UCSB after receiving my Bachelor of Science in Environmental Studies.
-
-During my time at UCSB, I hope to enjoy the natural environment that surrounds the area from the ocean to the mountains and make lifelong connections with people who are also passionate about helping others and taking care of the Earth.
-
-Feel free to roam through this digital home for my professional work and  continously check here as I continue to progress in my ability to create data visualizations, collaborate on projects with my cohort, and expand on my environmental interests.
+I'm Monique and currently, I am a graduate student at the University of California Santa Barbara pursuining a Master in Environmental Data Science at the Bren School of Environmental Science and Managment. Besides my passion for the environment, I enjoy discovering new vegan restaurants, practicing my non-primary languages (Spanish, French, and Korean), and learning new skills, such as djing, filmmaking, and (of course) coding! Check out my [about me](about.qmd) to read more or my past projects. 

@@ -1,27 +1,72 @@
 ---
-title: "About Me"
+title: ""
 format: html
 ---
 
 
-There's a whole multitude of hobbies, passions, and interests that I hold dearly to my heart. I would love to display it all for everyone, but the three things that create who I am to my core is: Traveling, Veganism, and my dog Raaja.
+## {{< fa star title="star" >}} Quick glimpse
+Hi again!
 
-### My Adventures around the world
+ **For those who are just browsing**:
+ 
+ I enjoy trying new vegan dishes, whether that's at home or at a restaurant, traveling around the world, and spending time with my pet companion, Raaja, who likes to smell flowers on his daily walks.
 
-Since I was a kid, traveling has been on my mind. Due to my family originating from parts of Mexico, South Korea, Portugal, and Spain, I have always had a great sense of wanderlust. I wanted to witness the childhood of my mother from Jalisco, Mexico or the lands my grandmother left in South Korea. As of today, I have traveled to four different countries: France, Germany, Switzerland, and (of course) Mexico! Each place was magnetic and beautiful in its own unique way. The way of living is different in each place. My most memorable travel was to Lyon and Paris France for my birthday in 2022. While there, we had the chance to travel to Geneva, Switzerland which was a large hub of shopping and dining. The best part about traveling is getting to eat the local food and having a new scenery enter your life for a brief moment.
+My favorite genre for reading is classic literature and if possible, I prefer to read in the original language.
 
-![Lyon, France (2022)](IMG_6937.jpg){width="500"}
+I also play video games from animal crossing to call of duty. Since my screentime would be doubled from gaming and classwork, I have transitioned to playing sudoku from a book, card games, and now outdoor sports.
 
-![Tulum, Mexico (The Ruins,2025)](tulum.jpg){width="500px"}
+The way I connect with nature is by enjoying the beach at night, especiialy during a full moon.
 
-### My Vegan Lifestyle
 
-I wasn't born into a vegan life; I adopted one. I have always had a great interest in reducing my meat intake, cutting out dairy for health reasons, and just not harming animals in general, but never took the plunge until three years ago. If my teenage self could see me, I wish I could tell her that we did it! People may think it's just changing the diet, but it's other things too like not buying fur, wool, or leather. My vegan lifestyle blends very well with my academic interests and I have had the chance to explore environmental veganism due to my major. There are many challenges that come with being vegan as the food may not be so easily accessible such as animal-based food, but with time and experience those challenges have become minimal.
+## {{< fa map-pin title="map pin" >}} My Adventures around the world
+
+The coolest thing to me when I was a kid was the idea of seeing the entire world, which is something I wanted to have my own child experience along with me. My family have origins from multiple parts of the world, including Mexico, South Korea, Portugal, and Spain.
+
+My bucket list of places to visit has grown larger and larger as time goes on, but there are two places that are dear to me that take precedence. One is the birth place of my mom which is Jalisco, Mexico and the other is Seoul, South Korea where my paternal grandmother originates, though she was also born in Yucatan, Mexico.
+
+:::{.column-margin}
+```{r}
+#| echo: false
+#| fig-align: left
+#| fig-alt: "France Trip 2022"
+knitr::include_graphics("chibi.jpeg")
+```
+::: {.center-text .extra-small-text .dark-gray-text .topbr}
+*France Trip 2022.*
+:::
+:::
+
+My favorite traveing memory is taking my 1 year old son to Europe and having him tag along everywhere we went like a 15 pound backpack! We stayed in Lyon, France and visited Paris as well as Geneva, Switzerland. His first playground he played on was a french playground and they really set the standard for playgrounds after that. Even more recently, we visited Tulum, Mexico where we spent all day at the pool or at the beach. And of course, no matter the location, my favorite thing to do is eat the local vegan food.
+
+
+## {{< fa crown title="crown" >}} My Vegan Lifestyle
 
 ![Homemade and Restaurant](IMG_6936.jpg)
 
-### My dog Raaja
+I wasn't born into a vegan life; I adopted one. I have always had a great interest in reducing my meat intake, cutting out dairy for health reasons, and just not harming animals in general, but never took the plunge until 2022.
 
-I am blessed to have amazing friends and family in my life, but having a dog is like having a guardian angel on Earth. Raaja was found deserted in front of a kill shelter for animals in Downey, California on December 1, 2015 which is my birthday. The very next day, wanting a dog out of nowhere, I visited SEACCA and fell immediately in love with a small golden puppy roughly four months old. Unfortunately, there was a long list of people waiting to adopt him. Nonetheless, I add my name to it. The next day I went to visit again and waas told that I was the only one there for him. I was called to know that I was the only one interested in him which meant I get to have him. Paying the small fee, I got to take him home and dubbed him with the name Maharaaja. Ever since then, he has been the best companion in my life. He goes everywhere with me, to the store, to lunch, and sometimes to class too! He is naturally trained and has a bad habit of running away from home. Not So Fun Fact: He was gone for nine months. Actual Fun Fact: He loves flowers and eating chips!
+People may think it's just changing the diet, but it's other things too like not buying fur, wool, or leather. My vegan lifestyle blends very well with my academic interests and I have had the chance to explore environmental veganism due to my major. There are many challenges that come with being vegan as the food may not be so easily accessible such as animal-based food, but with time and experience those challenges have become minimal. There are so many great dishes that have found their way into rotation. Currently, there's a tuscan gnoochi dish that is comforting, filling, and delicious, but the best part is that it's incredibly fast!
+ 
+**My favorite recipes are**:
+
+- [Tofu pudding](https://www.hummusapien.com/tofu-chocolate-pudding/) 
+- [Zucchini roll ups](https://frommybowl.com/vegan-zucchini-lasagna-roll-ups/)
+
+**Favorite places to eat**:
+- OBerny Lyon, France
+- Pots and Wok Whittier, California
+- Just What I kneaded Los Angeles, California
+- El Bajon Vegan Tacos Tulum, Mexico
+- My mom's house Home, Earth
+
+
+## {{< fa paw title="paw" >}} Meet Raaja
 
 ![Maharaaja (2019)](IMG_6934.jpg){width="500px"}
+
+A dog is like having a guardian angel on Earth!
+
+Raaja is my 10 year old dog, who was rescued from SEACCA, and intially just a small golden puppy at four months old when we first met in 2015. Ever since then, he has always been by my side going everywhere with me. His favorite thing to do is meet people, escape the house, and return months later. Thankfully, as he ages his attempts decrease and when he does excape he'll just go scratch the front door and if it goes ignored, he'll do a very pronounce bark as if annoyed. He's great! ◡̈
+
+Check out his [instagram](www.instagram.com/raajatheprince)!
+
