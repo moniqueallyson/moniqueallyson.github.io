@@ -2,12 +2,18 @@
 title: ""
 format: html
 ---
-# Bachelor of Science in Environmental Studies
 
-During my undergrad, many of the final projects were open to be creative such as podcasts, videos, or blog posts over video essays. Here I display a few of those projects.
+# {{< fa user-graduate title="user graduate" >}} Master of Environmental Data Science
 
+To begin the masters program, students have to complete a 6-week bootcamp of reviewing math, learning R, learning python, and reproducing a figure as one of the finals.
 
-## {{< fa youtube title="youtube" >}} Documentary on Environmental Veganism
+Here is the [final Paper for EDS 214](https://moniqueallyson.github.io/MAH214final/paper.html).
+
+# {{< fa graduation-cap title="graduation cap" >}} B.S. in Environmental Studies
+
+During my undergrad, many of the final projects were open to be creative rather than traditional, such as podcasts, videos, or blog posts versus a final exam or essay. Here is one of my projects that I'm very proud to have created.
+
+## {{< fa video title="video" >}} Documentary on Environmental Veganism
 
 **Below is my research-based documentary:**
 
@@ -20,22 +26,26 @@ During my undergrad, many of the final projects were open to be creative such as
     allowfullscreen> </iframe>
 :::
 
-For my Critical Thinking course (ES 40), we were tasked to do a research project of our choice and interest throughout the entire quarter. As a person who was majoring in environmental studies, I was open to hearing from classmates and other peers about their <span style="color: green">**dietary choices and conflicting environmental beliefs**</span>. I did research on the impact that both the agricultural and livestock industry have on the environment and the choices individuals can make to lessen it from their own home. I provided perspectives from different backgrounds, both cultural and economical through personal interviews as to provide insight on the<span style="color: green"> **barriers that may be preventing environmentally conscious people from lessening their animal-based choices**</span>. I also highlight local resources and aid for those who are seeking to start their own personal journey of reducing their carbon foot-print or just lower their animal-based food intake.
+For my Critical Thinking course (ES 40), we were tasked to do a research project of our choice and interest throughout the entire quarter. My question was based on the small percentage of students in my environmental classes identifying as vegan or vegetarian despite studies showing the amount of water and land usage that is put into upholding the meat and dairy industry. Thus, did veganism matter in the overall context of helping the Earth, if those who studied it did not partake in it? 
 
-## Project 2
-### Yoga to Manage Chronic Pain
+**In this documentary, you'll find**:
 
-For my Data Science class, we were tasked with logging personal data from our lives over the course of the quarter (roughly 30 days). I decided to analyze my <span style="color: hotpink">**yoga routine**</span> and how it affects my chronic back pain. I tracked the days I did or didn’t practice yoga and recorded my pain levels using a scale from 1 to 10.
+- Student interviews
+- Resources to combat food insecurity
+- Free weekly community dinner
+- A tour of a co-op housing focused on a plant-based diet
 
-Overall, the project was a powerful motivation to care for both my mental and physical health while learning how to work with real data. I’ve found that yoga and consistent movement can significantly reduce my pain. Unsurprisingly, the data showed that the days I skipped yoga were also the days I experienced the highest levels of discomfort.
+## A personal data collection and an interactive plot
 
-### Data Visualization Code
+For a final project, we had to build an interactive plot using data we collected over the quarter. I chose to collect the dates and time I practiced yoga and the pain levels I experienced throughtout the week in terms of if I practived or not. This was a simple data collection, but was still great to use to become familiar with the R language.
+
+**Code below**:
 
 ```{r, message=FALSE, warning=FALSE, error=FALSE, echo=TRUE}
 
 library(tidyverse)
+library()
 library(janitor)
-library(plotly)
 library(htmlwidgets)
 
 
@@ -69,9 +79,7 @@ p <- ggplot(mydata, aes(
     panel.grid.minor = element_blank()
   )
 
-ggplotly(p, tooltip = "text") |>
-  layout(
-    hoverlabel = list(font = list(size = 14)),
-    annotations = list())
+plotly::ggplotly(p, tooltip = "text") |>
+  plotly::layout(hoverlabel = list(font = list(size = 14)))
 
 ```

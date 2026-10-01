@@ -10,7 +10,7 @@ website:
   navbar:
     pinned: true
     logo: /image/Monique.png
-    left:
+    right:
       - href: index.qmd
         text: Home
       - href: about.qmd
