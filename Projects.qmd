@@ -7,7 +7,7 @@ format: html
 
 To begin the masters program, students have to complete a 6-week bootcamp of reviewing math, learning R, learning python, and reproducing a figure as one of the finals.
 
-Here is the [Final Paper for EDS 214](https://moniqueallyson.github.io/MAH214final/paper.html).
+Here is the [Final Paper for EDS 214](https://moniqueallyson.github.io/MAH214final/paper.html){target="_blank"}..
 
 # {{< fa graduation-cap title="graduation cap" >}} B.S. in Environmental Studies
 
