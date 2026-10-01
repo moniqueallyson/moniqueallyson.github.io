@@ -7,7 +7,7 @@ format: html
 about:
   template: jolla
   image-shape: round
-  image-width: 15rem
+  image-width: 25rem
   links:
     - text: GitHub
       href: https://github.com/moniqueallyson
@@ -23,4 +23,10 @@ about:
 
 # Welcome!
 
-I'm Monique and currently, I am a graduate student at the University of California Santa Barbara pursuining a Master in Environmental Data Science at the Bren School of Environmental Science and Managment. Besides my passion for the environment, I enjoy discovering new vegan restaurants, practicing my non-primary languages (Spanish, French, and Korean), and learning new skills, such as djing, filmmaking, and (of course) coding! Check out my [about me](about.qmd) to read more or my past projects. 
+Hi! ʕ•ᴥ•ʔ
+
+I'm Monique, a current graduate student pursuining a Master in Environmental Data Science at the Bren School of Environmental Science and Managment located within the University of California Santa Barbara (UCSB). Besides my interest to advocate for environmental justice, I enjoy discovering new vegan restaurants, practicing my non-primary languages (Spanish, French, and Korean), and learning new skills, such as djing, filmmaking, and (of course) coding! To learn more check out my [about me](about.qmd) or browse through my past projects. 
+
+I'm so excited to be a Brennie! Shout out MEDS '27! Here's to nine months of codependency. ＼(＾▽＾)／
+
+
