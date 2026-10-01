@@ -7,7 +7,7 @@ format: html
 
 To begin the masters program, students have to complete a 6-week bootcamp of reviewing math, learning R, learning python, and reproducing a figure as one of the finals.
 
-Here is the [final Paper for EDS 214](https://moniqueallyson.github.io/MAH214final/paper.html).
+Here is the [Final Paper for EDS 214](https://moniqueallyson.github.io/MAH214final/paper.html).
 
 # {{< fa graduation-cap title="graduation cap" >}} B.S. in Environmental Studies
 
@@ -35,7 +35,7 @@ For my Critical Thinking course (ES 40), we were tasked to do a research project
 - Free weekly community dinner
 - A tour of a co-op housing focused on a plant-based diet
 
-## A personal data collection and an interactive plot
+## {{< fa cloud title="cloud" >}} A personal data collection and an interactive plot
 
 For a final project, we had to build an interactive plot using data we collected over the quarter. I chose to collect the dates and time I practiced yoga and the pain levels I experienced throughtout the week in terms of if I practived or not. This was a simple data collection, but was still great to use to become familiar with the R language.
 
