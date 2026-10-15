@@ -1,0 +1,26 @@
+/*-- scss:defaults --*/
+
+// Colors
+$raspberry-rose: #B3446C;
+$old-moss-green: #7f8330;
+$vanilla-cream: #d1caa4;
+$champagne-pink: #f3d8ce;
+$blood: #5e1104;
+$guava-pink: #F58C8C;
+$sage-leaf: #A8B58A;
+$rosewood: #B46A72;
+$oat-latte: #DCD4C1;
+$misty-sky: #A9B7C6;
+
+// Base document colors
+$navbar-bg: $rosewood; // navbar
+$navbar-fg: $blood; // navbar foreground elements
+$navbar-hl: $champagne-pink; // highlight color when hovering over navbar links
+$body-bg: $oat-latte; // page background 
+$body-color: $blood; // page text 
+$footer-bg: $guava-pink; // footer 
+$link-color: $vanilla-cream; // hyperlinks 
+
+// Inline code
+$code-bg: $vanilla-cream; // inline code background color
+$code-color: $blood; // inline code text color
