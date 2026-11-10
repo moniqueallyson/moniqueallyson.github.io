@@ -1,0 +1,9 @@
+freeze: auto
+title-block-banner: true
+
+
+author:
+    - name: Monique Hernandez
+      url: https://moniqueallyson.github.io/
+      affiliation: Master of Environmental Data Science Program at the Bren School
+      affiliation-url: https://ucsb-meds.github.io

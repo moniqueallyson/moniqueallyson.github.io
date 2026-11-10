@@ -17,6 +17,8 @@ website:
         text: About Me
       - href: Projects.qmd
         text: Projects
+      - href: posts.qmd
+        text: Blog Posts
 page-footer:
   left: copyright 2025, Monique Hernandez
   right: Build with github

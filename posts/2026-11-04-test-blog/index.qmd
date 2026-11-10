@@ -1,0 +1,16 @@
+---
+title: "My very own blog post!"
+description: "A short description that appears on the listing page"
+data: 11-04-2026
+categories: [Quatro, R, MEDS, Geospatial]
+draft: true
+---
+
+
+here is blog
+
+
+
+```{r}
+1+1 
+```
