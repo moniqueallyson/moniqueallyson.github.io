@@ -1,0 +1,8 @@
+---
+title: "Climate meets Conflict"
+description: "A case study on sampling bias"
+data: 11-11-2026
+categories: [Quatro, Analysis, MEDS, Geopolitics]
+draft: true
+---
+
