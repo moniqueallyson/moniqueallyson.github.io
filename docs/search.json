@@ -4,14 +4,14 @@
     "href": "posts.html",
     "title": "My Blog",
     "section": "",
-    "text": "No matching items"
+    "text": "My very own blog post!\n\n\n\nQuatro\n\nR\n\nMEDS\n\nGeospatial\n\n\n\nA short description that appears on the listing page\n\n\n\nMonique Hernandez\n\n\n\n\n\n\n\n\n\n\n\n\n\nSuitable locations for potential aquaculture\n\n\n\nAquaculture\n\nData Science\n\nGeospatial\n\nR\n\n\n\nMapping U.S west coast\n\n\n\nMonique Hernandez, Monique Allyson Hernandez\n\n\nDec 2, 2026\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Welcome!",
     "section": "",
-    "text": "Welcome!\nHi! ʕ•ᴥ•ʔ\nI’m Monique, a current graduate student pursuining a Master in Environmental Data Science at the Bren School of Environmental Science and Managment located within the University of California Santa Barbara (UCSB). Besides my interest to advocate for environmental justice, I enjoy discovering new vegan restaurants, practicing my non-primary languages (Spanish, French, and Korean), and learning new skills, such as djing, filmmaking, and (of course) coding! To learn more check out my about me or browse through my past projects."
+    "text": "Welcome!\nI’m Monique, a current graduate student pursuining a Master in Environmental Data Science at the Bren School of Environmental Science and Managment located within the University of California Santa Barbara (UCSB). Besides my interest to advocate for environmental justice, I enjoy discovering new vegan restaurants, practicing my non-primary languages (Spanish, French, and Korean), and learning new skills, such as djing, filmmaking, and (of course) coding! To learn more check out my about me or browse through my past projects."
   },
   {
     "objectID": "Projects.html",
@@ -68,5 +68,40 @@
     "title": "Monique Allyson Hernandez",
     "section": " Meet Raaja",
     "text": "Meet Raaja\n\n\n\nMaharaaja (2019)\n\n\nA dog is like having a guardian angel on Earth! (◕ᴥ◕ʋ)\nRaaja is my 10 year old dog, who was rescued from SEACCA, and intially just a small golden puppy at four months old when we first met in 2015. Ever since then, he has always been by my side going everywhere with me. His favorite thing to do is meet people, escape the house, and return months later. Thankfully, as he ages his attempts decrease and when he does escape he’ll just go scratch the front door and if it goes ignored, he’ll do a very pronounce bark as if annoyed. He’s great! ◡̈\nCheck out his instagram!"
+  },
+  {
+    "objectID": "posts/2026-11-26-aquaculture/index.html",
+    "href": "posts/2026-11-26-aquaculture/index.html",
+    "title": "Suitable locations for potential aquaculture",
+    "section": "",
+    "text": "Image Credits: The Marine Mammal Center"
+  },
+  {
+    "objectID": "posts/2026-11-26-aquaculture/index.html#question",
+    "href": "posts/2026-11-26-aquaculture/index.html#question",
+    "title": "Suitable locations for potential aquaculture",
+    "section": "QUESTION",
+    "text": "QUESTION"
+  },
+  {
+    "objectID": "posts/2026-11-26-aquaculture/index.html#data",
+    "href": "posts/2026-11-26-aquaculture/index.html#data",
+    "title": "Suitable locations for potential aquaculture",
+    "section": "DATA",
+    "text": "DATA"
+  },
+  {
+    "objectID": "posts/2026-11-26-aquaculture/index.html#code",
+    "href": "posts/2026-11-26-aquaculture/index.html#code",
+    "title": "Suitable locations for potential aquaculture",
+    "section": "CODE",
+    "text": "CODE"
+  },
+  {
+    "objectID": "posts/2026-11-26-aquaculture/index.html#reflections",
+    "href": "posts/2026-11-26-aquaculture/index.html#reflections",
+    "title": "Suitable locations for potential aquaculture",
+    "section": "REFLECTIONS",
+    "text": "REFLECTIONS"
   }
 ]

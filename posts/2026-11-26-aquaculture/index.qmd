@@ -1,0 +1,34 @@
+---
+title: "Suitable locations for  potential aquaculture"
+description: "Mapping U.S west coast"
+author: 
+  name: Monique Allyson Hernandez
+  email: mahernandez@ucsb.edu
+url: https://moniqueallyson.github.io/
+affiliation: 
+- University of California, Santa Barbara
+- Masters of Environmental Data Science at the Bren School
+affiliation-url: https://bren.ucsb.edu/masters-programs/master-environmental-data-science
+date: 12-02-2026
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    theme: pulse
+    code-fold: true
+    code-summary: "Show code"
+categories: [Aquaculture, Data Science, Geospatial, R]
+image: images/aqua.jpg
+editor_options: 
+  chunk_output_type: inline
+---
+![](images/aqua.jpg)
+Image Credits: [The Marine Mammal Center](https://www.marinemammalcenter.org/science-conservation/conservation/sustainable-seafood/aquaculture)
+
+## QUESTION
+
+## DATA
+
+## CODE
+
+## REFLECTIONS
