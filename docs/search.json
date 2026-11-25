@@ -4,7 +4,7 @@
     "href": "posts.html",
     "title": "My Blog",
     "section": "",
-    "text": "My very own blog post!\n\n\n\nQuatro\n\nR\n\nMEDS\n\nGeospatial\n\n\n\nA short description that appears on the listing page\n\n\n\nMonique Hernandez\n\n\n\n\n\n\n\n\n\n\n\n\n\nSuitable locations for potential aquaculture\n\n\n\nAquaculture\n\nData Science\n\nGeospatial\n\nR\n\n\n\nMapping U.S west coast\n\n\n\nMonique Hernandez, Monique Allyson Hernandez\n\n\nDec 2, 2026\n\n\n\n\n\n\nNo matching items"
+    "text": "My very own blog post!\n\n\n\nQuatro\n\nR\n\nMEDS\n\nGeospatial\n\n\n\nA short description that appears on the listing page\n\n\n\nMonique Allyson Hernandez\n\n\n\n\n\n\n\n\n\n\n\n\n\nSuitable locations for potential aquaculture\n\n\n\nAquaculture\n\nData Science\n\nGeospatial\n\nR\n\n\n\nMapping U.S west coast for species\n\n\n\nMonique Allyson Hernandez\n\n\nDec 2, 2026\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
@@ -74,7 +74,7 @@
     "href": "posts/2026-11-26-aquaculture/index.html",
     "title": "Suitable locations for potential aquaculture",
     "section": "",
-    "text": "Image Credits: The Marine Mammal Center"
+    "text": "Marine aquaculture have the potential to be a more sustainable option than the alternative land-based meat for the global food supply (Hall et al, 2011). Gentry et al. created a map based on the neccessay constraints for marine aquaculture including, ship traffics, dissolved oxygen, and bottom depth, concluding that the global seafood demand could be met with less than 0.015% of the global ocean area.\nThe main goal is to create a function that will input the following: minimum and maximum sea surface temp, minimum and maximum depth, and the species name. The output will be a map of the EEZ regions colored by the amount of suitable areas for the selected species.\nWhich Exclusive Economic Zones (EEZ) is suitable for aquaculture?\nThe approach to find suitable locations will be determined based on the range of suitable sea surface temperature (SST) and depth values for the species, both oysters and blue mussels."
   },
   {
     "objectID": "posts/2026-11-26-aquaculture/index.html#question",
@@ -87,8 +87,8 @@
     "objectID": "posts/2026-11-26-aquaculture/index.html#data",
     "href": "posts/2026-11-26-aquaculture/index.html#data",
     "title": "Suitable locations for potential aquaculture",
-    "section": "DATA",
-    "text": "DATA"
+    "section": "Data",
+    "text": "Data\n\n\n\n\n\n\n\n\nDataset\nDescription\nSource\n\n\n\n\nRow 1, Data 1\nRow 1, Data 2\nRow 1, Data 3\n\n\nRow 2, Data 1\nRow 2, Data 2\nRow 2, Data 3\n\n\nRow 1, Data 1\naverage annual sea surface temperature (SST) from the years 2008 to 2012\nRow 1, Data 3\n\n\n\nInformation on species’ temperature and depth requirements were acquired at SeaLifeBase.\nThe data used for average sea temperature is from Daily Global 5km Satellite Sea Surface Temperature Anomaly."
   },
   {
     "objectID": "posts/2026-11-26-aquaculture/index.html#code",
@@ -103,5 +103,75 @@
     "title": "Suitable locations for potential aquaculture",
     "section": "REFLECTIONS",
     "text": "REFLECTIONS"
+  },
+  {
+    "objectID": "posts/2026-11-26-aquaculture/index.html#which-exclusive-economic-zones-eez-on-the-west-coast-is-suitable-for-aquaculture",
+    "href": "posts/2026-11-26-aquaculture/index.html#which-exclusive-economic-zones-eez-on-the-west-coast-is-suitable-for-aquaculture",
+    "title": "Suitable locations for potential aquaculture",
+    "section": "Which Exclusive Economic Zones (EEZ) on the West Coast is suitable for aquaculture?",
+    "text": "Which Exclusive Economic Zones (EEZ) on the West Coast is suitable for aquaculture?\nWhich Exclusive Economic Zones (EEZ) on the West Coast of the US are best suited to develope marine aquaculture for several species of oysters and a species of your choice. Suitable locations will be determined based on range of suitable sea surface temperature (SST) and depth values for the species."
+  },
+  {
+    "objectID": "posts/2026-11-26-aquaculture/index.html#the-importance-of-aquaculture",
+    "href": "posts/2026-11-26-aquaculture/index.html#the-importance-of-aquaculture",
+    "title": "Suitable locations for potential aquaculture",
+    "section": "The importance of aquaculture",
+    "text": "The importance of aquaculture\nA recent study from the UN shows that aquaculture can improve food security and nutrition by increasing the amount of seafood available for people to eat. If done correctly, aquaculture increases food production, boosts economic growth in coastal and rural areas, and can help keep waterways clean."
+  },
+  {
+    "objectID": "posts/2026-11-26-aquaculture/index.html#which-exclusive-economic-zones-eez-is-suitable-for-aquaculture",
+    "href": "posts/2026-11-26-aquaculture/index.html#which-exclusive-economic-zones-eez-is-suitable-for-aquaculture",
+    "title": "Suitable locations for potential aquaculture",
+    "section": "",
+    "text": "Marine aquaculture have the potential to be a more sustainable option than the alternative land-based meat for the global food supply (Hall et al, 2011). Gentry et al. created a map based on the neccessay constraints for marine aquaculture including, ship traffics, dissolved oxygen, and bottom depth, concluding that the global seafood demand could be met with less than 0.015% of the global ocean area.\nWhich Exclusive Economic Zones (EEZ) on the West Coast of the US are best suited to develope marine aquaculture for several species of oysters and a species of your choice. Suitable locations will be determined based on range of suitable sea surface temperature (SST) and depth values for the species."
+  },
+  {
+    "objectID": "posts/2026-11-26-aquaculture/index.html#workflow-for-oysters",
+    "href": "posts/2026-11-26-aquaculture/index.html#workflow-for-oysters",
+    "title": "Suitable locations for potential aquaculture",
+    "section": "Workflow for Oysters",
+    "text": "Workflow for Oysters\n\n\nShow code\n# variables for min and max\nmin_sst &lt;- 11\nmax_sst &lt;- 30\n\n# Reclassifying SST and depth data into suitable locations\n# SST reclassification matrix\n  rcl_sst &lt;- matrix(\n    c(\n      -Inf, min_sst, 0,\n      min_sst, max_sst, 1,\n      max_sst, Inf, 0\n    ),\n    ncol = 3,\n    byrow = TRUE\n  )\n\nmin_depth &lt;- 0\nmax_depth &lt;- -70\n\n# Depth reclassification matrix\nrcl_depth &lt;- matrix(\n    c(\n      -Inf, max_depth, 0, # should max_depth be negative?\n      max_depth, min_depth, 1,\n      min_depth, Inf, 0\n    ),\n    ncol = 3,\n    byrow = TRUE\n  )\n\n\n\nFind Suitable Zones for Oysters\n\n\nShow code\n# reclassify sst and depth to suitable zones\nzone_sst &lt;- classify(sst_mean_c, rcl = rcl_sst)\n\nzone_depth &lt;- classify(resampled_depth, rcl = rcl_depth)\n\n# Combine to adhere to satisfy both sst and depth for suitable zones\ndepth_sst_zones &lt;- c(zone_sst, zone_depth)\n\n\n\n\nShow code\n# Find suitable zones for oysters adhering to both conditions\nsuitable_zones &lt;- lapp(depth_sst_zones,\n function(sst_data, depth_data) sst_data * depth_data)\n\n\n\n\nFind suitable total area inside EEZ\n\n\nShow code\n# Converting sst data to match suitable zones\nsf::st_crs(eez_data)&lt;- terra::crs(suitable_zones)\n\n\n\n\nShow code\n# Convert to raster\neez_raster &lt;- rasterize(eez_data, suitable_zones, field = \"rgn_id\")\n\n\n\n\nShow code\n# Calculate cell size\ncell_size &lt;- cellSize(suitable_zones, unit = \"km\", mask = TRUE)\n\n\n\n\nShow code\n# Use only the cells with value 1 as suitable in the total area\nsuitable_zmask &lt;- mask(cell_size,suitable_zones, maskvalues = 0)\n\n\n\n\nShow code\n# Select raster cells by suitable zpmes inside EEZ\ndesired_zone &lt;- zonal(suitable_zmask,eez_raster, fun = 'sum', na.rm = TRUE)\n\n\n\n\nCreate Map for Oyster Colored by EEZ Regions\n\n\nShow code\n# Create tibble\nz_tibble &lt;- as_tibble(desired_zone)\n\n# Merge for desired zones to EEZ data\nmap_1 &lt;- left_join(eez_data, z_tibble, by = \"rgn_id\")\n\n\n\n\nShow code\n# Creating a color palette to differentiate the regions\ncolor_palette &lt;- c(\"#d0f0f0\", \"#5fb3c7\", \"#1f78a8\", \"#08306b\")\n\n\n\n\nShow code\n# Visualize oyster suitable area by EEZ region\ntm_basemap(\"OpenStreetMap\") +\n  tm_shape(map_1) +\n  tm_polygons(\n    fill = \"area\",\n    fill_alpha = 0.7,\n    col = \"grey30\",\n    fill.scale = tm_scale_continuous(values = color_palette),\n    fill.legend = tm_legend(\n      title = \"Suitable Area (km²)\",\n      position = tm_pos_out(\"right\", \"center\")\n    )\n  ) +\n  tm_text(text = \"rgn_key\", size = 0.7, col = \"grey20\") +\n  tm_compass(type = \"8star\",\n        size = 2, position = c(\"right\", \"top\")) +\n  tm_scalebar(position = c(\"left\", \"bottom\"), size = 5) +\n  tm_options(component.autoscale = FALSE) +\n  tm_title(\"Suitable Oyster Aquaculture\\nin the West Coast by EEZ\", size = 1)\n\n\n! The 'size' argument of `tm_scalebar()` is deprecated as of tmap 4.0.\nℹ Please use 'text.size' instead.\n\n\nWarning: The scale bar would be 1.3 times as large when plotted at the top and 1.1 times\nas large when plotted at the center\n\n\n\n\n\n\n\n\n\n\n\nNumerical Oyster Reprsentation within EEZ Regions\n\n\nShow code\n# Create a table for area by region and suitability\nmap_1 |&gt;\n  st_drop_geometry() |&gt;\n  select(rgn_id, area, area_km2) |&gt;\n  arrange(desc(area)) |&gt;\n  mutate(pct_suitable = area / area_km2 * 100) |&gt;\n  kable(\n    digits = 1,\n    col.names = c(\n      \"EEZ Region\",\n      \" Suitable Area (km²)\",\n      \"Total EEZ Area (km²)\",\n      \"Suitable (%)\"\n    ),\n    caption = \"Oyster Aquaculture by Exclusive Economic Zone (EEZ) in the West Coast\",\n    booktabs = TRUE\n  ) |&gt;\n  kable_styling(latex_options = c(\"striped\", \"hold_position\"))\n\n\n\nOyster Aquaculture by Exclusive Economic Zone (EEZ) in the West Coast\n\n\nEEZ Region\nSuitable Area (km²)\nTotal EEZ Area (km²)\nSuitable (%)\n\n\n\n\n3\n4373.6\n202738.3\n2.2\n\n\n4\n3329.9\n206860.8\n1.6\n\n\n5\n3091.5\n66898.3\n4.6\n\n\n1\n1395.7\n179994.1\n0.8\n\n\n2\n323.9\n164378.8\n0.2"
+  },
+  {
+    "objectID": "posts/2026-11-26-aquaculture/index.html#eez-species-function-blue-mussel",
+    "href": "posts/2026-11-26-aquaculture/index.html#eez-species-function-blue-mussel",
+    "title": "Suitable locations for potential aquaculture",
+    "section": "EEZ Species Function: Blue Mussel",
+    "text": "EEZ Species Function: Blue Mussel\nUtilizing the function created above, a map, as well as a table with the total suitable area depicted numerically, can be easily recreated for the desired blue mussel rather than recreate the lengthy process of manually inputing the inforamtion for sea surface temperature and depth.\nThe function is called after EEZ species and used as shown:\n\neez_species(min_sst, max_sst, min_depth, max_depth, species_name)\n\nSimply Input into the funtion:\n\nOysters:\n\nmin_sst = 11°C\nmax_sst = 30°C\nmin_depth = 0 meters\nmax_depth = -70 meters\nSpecies_name = Oysters\n\nBlue mussels:\n\nmin_sst = 5°C\nmax_sst = 20°C\nmin_depth = 0 meters\nmax_depth = -60 meter\nspecies_name = Blue Mussel\n\nOutput:\n\nmap of EEZ regions colored by amount of suitable area\n\n\n\n\nShow code\n# Verify function by using oysters\noyster &lt;- eez_species(11, 30, 0, -70, 'Oysters')\noyster[[1]]\n\n\n\n\n\n\n\n\n\nFigure 1:\nMap of the West Coast showcasing the suitable areas that meet several oyster’s sea surface temperature and depth for aquaculture possibilites based on Exclusive Economic Zones.\n\n\nShow code\n# Make a table for blue mussel\nknitr::kable(oyster[[2]],\ndigits = 2, col.names = c(\"EEZ Region\",\n      \" Suitable Area (km²)\",\n      \"Total EEZ Area (km²)\",\n      \"Suitable (%)\"))\n\n\n\nTable depicting the total area (Km^2) by EEZ regions in the West Coast for several oyster species.\n\n\nEEZ Region\nSuitable Area (km²)\nTotal EEZ Area (km²)\nSuitable (%)\n\n\n\n\n3\n4373.56\n202738.33\n2.16\n\n\n4\n3329.90\n206860.78\n1.61\n\n\n5\n3091.52\n66898.31\n4.62\n\n\n1\n1395.73\n179994.06\n0.78\n\n\n2\n323.91\n164378.81\n0.20\n\n\n\n\n\n\n\nShow code\n# Use function for blue mussel\nblue_mussels &lt;- eez_species(5, 20, 0, -60, 'Blue Mussel')\nblue_mussels[[1]]\n\n\n\n\n\n\n\n\n\nFigure 2:\nMap of the West Coast showcasing the suitable areas that meet the Blue Mussel’s sea surface temperature and depth for aquaculture possibilites based on Exclusive Economic Zones.\n\n\nShow code\n# Make a table for blue mussel\nknitr::kable(blue_mussels[[2]],\ndigits = 2, col.names = c(\"EEZ Region\",\n      \" Suitable Area (km²)\",\n      \"Total EEZ Area (km²)\",\n      \"Suitable (%)\"))\n\n\n\nTable depicting the total area (Km^2) by EEZ regions in the West Coast for Blue Mussel species.\n\n\nEEZ Region\nSuitable Area (km²)\nTotal EEZ Area (km²)\nSuitable (%)\n\n\n\n\n5\n6545.83\n66898.31\n9.78\n\n\n3\n3910.14\n202738.33\n1.93\n\n\n1\n3152.90\n179994.06\n1.75\n\n\n4\n2938.33\n206860.78\n1.42\n\n\n2\n2410.14\n164378.81\n1.47"
+  },
+  {
+    "objectID": "posts/2026-11-26-aquaculture/index.html#the-importance-of-aquaculture-and-sustainability",
+    "href": "posts/2026-11-26-aquaculture/index.html#the-importance-of-aquaculture-and-sustainability",
+    "title": "Suitable locations for potential aquaculture",
+    "section": "The importance of aquaculture and sustainability",
+    "text": "The importance of aquaculture and sustainability\nA recent study from the UN shows that aquaculture can improve food security and nutrition by increasing the amount of seafood available for people to eat. If done correctly, aquaculture increases food production, boosts economic growth in coastal and rural areas, and can help keep waterways clean."
+  },
+  {
+    "objectID": "posts/2026-11-26-aquaculture/index.html#analysis",
+    "href": "posts/2026-11-26-aquaculture/index.html#analysis",
+    "title": "Suitable locations for potential aquaculture",
+    "section": "Analysis",
+    "text": "Analysis\nBlue mussels are eurythermal and well adapted to temperatures of 5–20 °C, with an upper thermal tolerance limit of about 29 °C for adults (Matoo et al., 2021).\nFor the oysters, the information is the following:\n\nOysters:\n\nSea surface temperature: 11-30°C\nDepth: 0-70 meters below sea level\n\nBlue mussel:\n\nName: Mytilus edulis\nSea surface temperature: 5-20°C\nDepth: 0-60 m"
+  },
+  {
+    "objectID": "posts/2026-11-26-aquaculture/index.html#conclusion",
+    "href": "posts/2026-11-26-aquaculture/index.html#conclusion",
+    "title": "Suitable locations for potential aquaculture",
+    "section": "Conclusion",
+    "text": "Conclusion\nUsing the Exclusive Economic Zones to map out suitable areas for marine species that have a high potential for aquaculture development in the west coast of the United States.\nThe conditions for the species were determined by using the sea surface temperature and depth below, oyster with a range of 11-30°C and maximum depth of 70 meters below sea level, and blue mussels with a range of 5-20°C and a maximum depth of 60 meters.\nThe area for oyster farming was found to be in Central California with a total of 4,373.6 km^2 and the lower bound being in Northern California with 323.9 km^2.\nAs for the second species, the suitable location being in Washington with a total of 6545.8 km^2 and the lowest being in Northern California with a total of 2410.1 km^2."
+  },
+  {
+    "objectID": "posts/2026-11-26-aquaculture/index.html#potential-caveats-or-future-directions",
+    "href": "posts/2026-11-26-aquaculture/index.html#potential-caveats-or-future-directions",
+    "title": "Suitable locations for potential aquaculture",
+    "section": "Potential caveats or future directions",
+    "text": "Potential caveats or future directions\n\nThis\nthat\nand more."
+  },
+  {
+    "objectID": "posts/2026-11-26-aquaculture/index.html#data-citations",
+    "href": "posts/2026-11-26-aquaculture/index.html#data-citations",
+    "title": "Suitable locations for potential aquaculture",
+    "section": "Data Citations",
+    "text": "Data Citations\n“Blue Frontiers: Managing the Environmental Costs of Aquaculture”, S. J. Hall, A. Delaporte, M. J. Phillips, M. Beveridge, and M. O’Keefe, available here\n“Temperature but not ocean acidification affects energy metabolism and enzyme activities in the blue mussel, Mytilus edulis”, O. B. Matoo, G. Lannig, C. Bock, and I. M. Sokolova, Ecology and Evolution, 2021, available here [Accessed: Nov. 7, 2026]"
   }
 ]
