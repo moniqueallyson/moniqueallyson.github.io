@@ -1,0 +1,24 @@
+---
+title: "Fire Scars Visualization"
+description: "Eaton and Palisades Fire"
+affiliation: 
+- University of California, Santa Barbara
+- Masters of Environmental Data Science at the Bren School
+affiliation-url: https://bren.ucsb.edu/masters-programs/master-environmental-data-science
+date: 12-02-2026
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    code-fold: true
+    code-summary: "Show code"
+categories: [Wildfires, Geospatial, Python]
+image: images/aqua.jpg
+editor_options: 
+  chunk_output_type: inline
+draft: true
+---
+
+![](images/area.jpeg
+
+
