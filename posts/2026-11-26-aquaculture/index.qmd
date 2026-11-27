@@ -1,10 +1,6 @@
 ---
-title: "Suitable locations for  potential aquaculture"
-description: "Mapping U.S west coast"
-author: 
-  name: Monique Allyson Hernandez
-  email: mahernandez@ucsb.edu
-url: https://moniqueallyson.github.io/
+title: "Where in the Waters?"
+description: "Geospatial Analysis for Aquacultures on the West Coast"
 affiliation: 
 - University of California, Santa Barbara
 - Masters of Environmental Data Science at the Bren School
@@ -14,7 +10,6 @@ format:
   html:
     toc: true
     toc-depth: 3
-    theme: pulse
     code-fold: true
     code-summary: "Show code"
 categories: [Aquaculture, Data Science, Geospatial, R]
@@ -22,13 +17,535 @@ image: images/aqua.jpg
 editor_options: 
   chunk_output_type: inline
 ---
-![](images/aqua.jpg)
-Image Credits: [The Marine Mammal Center](https://www.marinemammalcenter.org/science-conservation/conservation/sustainable-seafood/aquaculture)
 
-## QUESTION
+![](images/image_aqua.avif)
 
-## DATA
+# Background
 
-## CODE
+## What is the Future of Food Security? 
 
-## REFLECTIONS
+Marine aquaculture has the potential to be a more sustainable option to create future food security than the alternative land-based approach as the rising human population is estimated to reach 10 billion by 2050 (Gentry et al, 2017). Traditional farming is highly resource intensive. Beef production uses 61.1kg of grain and 28 kg for pork production, while 1 kg of finfish would use less than 13.5 kg of grain (Hall et al. 2011). Despite the promising solution, there is very little known about the areas on where species can thrive and aquacultures can succeed. Gentry et al. calculated the growth performance index and spatially assessed the location for general growing potential for suitable fish and bivalves (2017).
+
+## Why the Ocean?
+
+The Earth’s living space is represented by 99% of water by volume and the ocean contains 97%. For this reason, the United Nations has implemented a Sustainable Development Goal 14 (Life Below Water) to include ocean conservation and encourage marine resources to be utilized efficiently (2022). This also ties into other United Nations' Sustainable Development Goals 1 (No poverty) and 2 (Zero hunger). Marine aquaculture seeks to meet the protein demands with the ocean representing an opportunity for food production with its potential being regarded as mostly untapped in terms of a farming source(Gentry et al. 2017).
+
+# Research Question
+
+This analysis determines the suitable locations along the west coast for several oyster species and blue mussel using Exclusive Economic Zones(EEZ). EEZ is an area that extends roughly 230 miles beyond a nation's territorial sea which is a boundary on where costal nations have jurisdiction over all resources, living and non-living (NOAA, 2020).
+
+**Where on the West Coast could oysters develop in aquaculture?**
+
+**Where on the West Coast could blue mussels develop in aquaculture?**
+
+Suitable growing conditions are dependent on sea surface temperature and ocean depth for species' optimal growth.
+
+| Species | Depth | Sea Surface Temperature |
+| --- | --- | --- |
+| Oyster | 0 - 70 meters below | 11- 30 °C|
+| Blue Mussel | 0 - 60 meters below | 5 - 20 °C |
+
+Blue mussels, *Mytilus edulis*, are eurythermal and well adapted to temperatures of 5–20 °C, with an upper thermal tolerance limit of about 29 °C for adults (Matoo et al. 2021). The depth for blue mussels was found on the website [SeaLifeBase](https://www.sealifebase.ca/search.php) and the oyster's information was given by the instructor.
+
+## Set-up
+
+The geospatial analysis ues a few packages to create a function for mapping out the suitable locations throughout the West Coast region, which uses the following:
+
+- `tidyverse`: R package for syntax and data structures
+- `sf`: Simple features represents all types of common vector geometry
+- `tmap`: Thematic maps handles vector and raster objects with ggplot grammar
+- `terra`: For spatial data analysis
+- `kableExtra`: to make nice HTML tables
+
+```{r}
+#| label: Load packages
+#| message: false
+#| warning: false
+#| code-fold: true
+#| output: false
+library(tidyverse)
+library(sf) # vector data
+library(here)
+library(tmap) # static or interactive maps
+library(janitor) 
+library(terra) # spatial data
+library(kableExtra) # tables
+```
+
+## Data
+
+The table represents the datasets that are used throughout this analysis in order to discover the locations for potential aquaculture in the West Coast region.
+
+| Dataset | Description | Source |
+| --- | --- | --- |
+| Bathymetry (depth) | Charecterize the depth of the ocean | [General Bathymetric Chart of the ceans](https://www.gebco.net/data-products/gridded-bathymetry-data#area) |
+| Exclusive Exonomic Zones (West Coast Region) | Martitime boundaries use for the creation of species distribtion lists per country | [Marine Regions](https://www.marineregions.org/eez.php) |
+| Average Annual Sea Surface Temperature| from the years 2008 to 2012 within the region| [NOAA](https://coralreefwatch.noaa.gov/product/5km/index_5km_ssta.php)|
+
+### Load and inspect data
+
+The sea surface temperature (SST) came from NOAA in multiple data files from 2008 to 2012. The data files were individually loaded then stacked to create a single raster file. The other two files were simply read accourdingly.
+
+```{r}
+#| label: Load data
+#| message: false
+#| warning: false
+#| code-fold: true
+#| output: false
+# Read in data for the average SST
+set_file <- c(
+    here("posts", "2026-11-26-aquaculture", "data", "average_annual_sst_2008.tif"),
+    here("posts", "2026-11-26-aquaculture", "data", "average_annual_sst_2009.tif"),
+    here("posts", "2026-11-26-aquaculture", "data", "average_annual_sst_2010.tif"),
+    here("posts", "2026-11-26-aquaculture", "data", "average_annual_sst_2011.tif"),
+    here("posts", "2026-11-26-aquaculture", "data", "average_annual_sst_2012.tif")
+)
+
+# File path for SST data stack
+sst <- rast(set_file)
+
+# Load bathymetry data
+depth <- rast(here("posts", "2026-11-26-aquaculture", "data", "depth.tif"))
+
+# Load West Coast EEZ 
+eez_data <- sf::st_read(here("posts", "2026-11-26-aquaculture", "data", "wc_regions_clean.shp"))
+```
+
+The average sea surface temperature over the 5 year period was calculated and converted from Kelvin to Celsius.
+
+```{r}
+#| label: Find average SST
+#| output: false
+# single raster of average SST
+sst_mean_c <- mean(sst, na.rm = TRUE) - 273.15
+```
+
+Depth and SST had different extents, resolutions, and origins, which were redefined using `resample()` and `crop()` for proper alignment.
+
+Two different CRS between the three datasets:
+
+- `depth`: EPSG 4326
+- `sst`: EPSG 9122
+- `eez_data`: EPSG 9122
+
+Since there were two datasets with the same CRS, the choice to change `depth` to match the others was decided.
+
+```{r}
+#| label: Match extent, resolution
+#| output: false
+# Crop data to match SST raster
+crop_depth <- crop(depth, sst_mean_c)
+
+# Transfer sst data using bilear method to match
+resampled_depth <- resample(crop_depth, sst_mean_c, method = "bilinear")
+
+# test if the resampled depth CRS matches the sst_mean_c CRS
+  if (crs(resampled_depth) == crs(sst_mean_c)) {
+    print("CRS match!")
+  } else {
+    warning("CRS don't match!")
+    crs(resampled_depth) <- crs(sst_mean_c)
+  }
+```
+
+## Suitable location workflow
+
+The following five steps are to build a function that will be used later to find suitable locations for marine species based on their sst and depth requirements.
+
+### Step 1. Reclassifying based on conditions
+
+Both sst and depth were reclassified into 0's and 1's coinciding suitability of locations by creating a reclassification matrix.
+
+Rows in the matrix are as following:
+
+- outside the lower range receive 0
+- suitable condition within range receives 1
+- outside the higher range recieve 0
+
+```{r}
+# Variables for min and max SST
+min_sst <- 11
+max_sst <- 30
+
+# SST reclassification matrix
+  rcl_sst <- matrix(
+    c(
+      -Inf, min_sst, 0,
+      min_sst, max_sst, 1,
+      max_sst, Inf, 0
+    ),
+    ncol = 3,
+    byrow = TRUE
+  )
+
+# Variables for min and max depth
+min_depth <- 0
+max_depth <- -70
+
+# Depth reclassification matrix
+rcl_depth <- matrix(
+    c(
+      -Inf, max_depth, 0,
+      max_depth, min_depth, 1,
+      min_depth, Inf, 0
+    ),
+    ncol = 3,
+    byrow = TRUE
+  )
+
+# Reclassify sst and depth to suitable zones
+zone_sst <- classify(sst_mean_c, rcl = rcl_sst)
+
+zone_depth <- classify(resampled_depth, rcl = rcl_depth)
+
+# Combine to adhere to satisfy both sst and depth for suitable zones
+depth_sst_zones <- c(zone_sst, zone_depth)
+```
+
+### Step 2. Combine with map algebra
+
+After reclassification, a function for map alegbra using `lapp()` to layers as arguments.
+
+```{r}
+
+zone_fun <- function(sst, depth){
+  sst * depth
+}
+# Find suitable zones for oysters adhering to both conditions
+suitable_zones <- lapp(depth_sst_zones,
+ fun = zone_fun)
+```
+
+### Step 3. Rasterize EEZ regions
+
+EEZ data was rasterized by Region ID.
+
+```{r}
+#| label: Rasterizing EEZ
+# Convert to raster
+eez_raster <- rasterize(eez_data, suitable_zones, field = "rgn_id")
+```
+
+The EEZ raster values 1 through 5 are assigned as the following:
+
+1. Oregon
+2. Northern California
+3. Central California
+4. Southern California
+5. Washington
+
+```{r}
+#| label: Plotting EEZ 
+#| fig-cap: Exclusive Economic Zones on the West Coast
+#| fig-width: 4
+#| fig-height: 5
+plot(eez_raster, axes = FALSE) 
+```
+
+### Step 4. Calculate the suitable areas within each EEZ region
+
+Before moving onto any other spatial operations, `cellSize()` was used to compute the true area (km^2) of each cell to determine the suitable locations within EEZ.
+```{r}
+# Calculate cell size
+cell_size <- cellSize(suitable_zones, unit = "km", mask = TRUE)
+```
+
+Then set values to 0 that are outside the boundary and use only cells with value 1 to determing the suitable locations using `mask()`.
+
+```{r}
+# Use only the cells with value 1 as suitable in the total area
+suitable_zmask <- mask(cell_size,suitable_zones, maskvalues = 0)
+```
+
+Use the `zonal()` operation to apply the sum of area using the EEZ raster and the masked suitable zones.
+
+```{r}
+# Select raster cells by suitable zpmes inside EEZ
+desired_zone <- zonal(suitable_zmask,eez_raster, fun = 'sum', na.rm = TRUE)
+```
+
+A table was created to show the total suitable area found inside EEZ for oysters.
+```{r}
+#| label: table for area in EEZ
+#| tbl-cap: Suitable area (km^2) in EEZ by region
+desired_zone |> 
+  kable(col.names = c("EEZ region", "Suitable area (km^2)")) |> 
+  kable_styling(bootstrap_options = "striped")
+```
+
+### Step 5. Join results to EEZ regions and map suitable location
+
+Before mapping, the suitable areas are inputted into a tibble to the `left_join()` with EEZ.
+```{r}
+# Create a tibble
+z_tibble <- as_tibble(desired_zone)
+
+# Merge for desired zones to EEZ data
+map_1 <- left_join(eez_data, z_tibble, by = "rgn_id")
+```
+
+A simple color palette was created for an aesthetically pleasing map of the West Coast.
+
+```{r}
+# Creating a color palette to differentiate the regions
+color_palette <- c("#d0f0f0", "#5fb3c7", "#1f78a8", "#08306b")
+```
+
+The first map for the oyster was confirmed to be accurate to the suitable locations determined by EEZ, though it is not shown here but instead shown further ahead.
+
+```{r}
+#| label: Oyster West Coast EEZ
+#| fig-cap: "Suitability for oysters in the West Coast EEZ"
+#| warning: false
+#| message: false
+#| output: false
+# Visualize oyster suitable area by EEZ region
+tm_basemap("OpenStreetMap") +
+  tm_shape(map_1) +
+  tm_polygons(
+    fill = "area",
+    fill_alpha = 0.7,
+    col = "grey30",
+    fill.scale = tm_scale_continuous(values = color_palette),
+    fill.legend = tm_legend(
+      title = "Suitable Area (km²)",
+      position = tm_pos_out("right", "center")
+    )
+  ) +
+  tm_text(text = "rgn_key", size = 0.7, col = "grey20") +
+  tm_compass(type = "8star",
+        size = 2, position = c("right", "top")) +
+  tm_scalebar(position = c("left", "bottom"), size = 5) +
+  tm_options(component.autoscale = FALSE) +
+  tm_title("Suitable Oyster Aquaculture\nin the West Coast by EEZ", size = 1)
+```
+
+A table was created to show the suitable areas from the total area available inside EEZ by region. This depicts that only a small portion of areas inside suitable regions meet the criteria for both sea surface temperature and depth with the highest being 2.2% suitability in Central California.
+
+```{r}
+# Create a table for area by region and suitability
+map_1 |>
+  st_drop_geometry() |>
+  select(rgn_id, area, area_km2) |>
+  arrange(desc(area)) |>
+  mutate(pct_suitable = area / area_km2 * 100) |>
+  kable(
+    digits = 1,
+    col.names = c(
+      "EEZ Region",
+      " Suitable Area (km²)",
+      "Total EEZ Area (km²)",
+      "Suitable (%)"
+    ),
+    caption = "Oyster Aquaculture by Exclusive Economic Zone (EEZ) in the West Coast",
+    booktabs = TRUE
+  ) |>
+  kable_styling(latex_options = c("striped", "hold_position"))
+```
+
+# Function: Find Suitable Area for Marine Species
+
+The function is called after EEZ species and used as shown:
+
+`eez_species(min_sst, max_sst, min_depth, max_depth, species_name)`
+
+The function utilizes the five steps detailed above and creates a map or a table for the given species by inputting the following:
+
+- minimum and maximum SST
+- minimum and maximum depth
+- "species name"
+
+```{r}
+#| label: Function
+
+eez_species <- function(
+    min_sst,
+    max_sst,
+    min_depth,
+    max_depth,
+    species_name
+){
+# Step 1. SST matrix reclassification
+    rcl_sst <- matrix(
+    c(
+      -Inf, min_sst, 0,
+      min_sst, max_sst, 1,
+      max_sst, Inf, 0
+    ),
+    ncol = 3,
+    byrow = TRUE
+    )
+
+# Reclassify SST
+    zone_sst <- classify(sst_mean_c, rcl = rcl_sst)
+    
+# Reclassify depth
+    rcl_depth <- matrix(
+    c(
+      -Inf, max_depth, 0,
+      max_depth, min_depth, 1,
+      min_depth, Inf, 0
+    ),
+    ncol = 3,
+    byrow = TRUE
+    )
+
+    zone_depth <- classify(resampled_depth, rcl = rcl_depth)
+
+# Combine the two zones together 
+    depth_sst_zones <- c(zone_sst, zone_depth)
+    
+# Step 2. Define function 
+zone_fun <- function(sst, depth){
+  sst * depth}
+
+# Find suitable zones
+    suitable_zones <- lapp(depth_sst_zones, 
+    fun = zone_fun)
+    
+# Step 3. Convert to raster
+    eez_raster <- rasterize(eez_data, suitable_zones, field = "rgn_id")
+    
+# Step 4. Calculate cell size
+    cell_size <- cellSize(suitable_zones, unit = "km", mask = TRUE)
+    
+# Keep cell area only where suitable areas equals 1
+
+    suitable_zmask <- mask(cell_size,suitable_zones, maskvalues = 0)
+    
+# Use zonal function to sum masked result and eez raster
+
+    desired_zone <- zonal(suitable_zmask,eez_raster, fun = 'sum', na.rm = TRUE)
+    
+# Step 5. Create tibble
+    z_tibble <- as_tibble(desired_zone)
+    
+# Merge for desired EEZ regions
+    map <- left_join(eez_data, z_tibble, by = "rgn_id")
+
+# Create color palette   
+   color_palette <- c("#d0f0f0", "#5fb3c7", "#1f78a8", "#08306b")
+
+# Visualize EEZ
+   map_species <- tm_basemap("OpenStreetMap") +
+  tm_shape(map) +
+  tm_polygons(
+    fill = "area",
+    fill_alpha = 0.85,
+    col = "grey30",
+    fill.scale = tm_scale_continuous(values = color_palette),
+    fill.legend = tm_legend(
+      title = "Suitable Area (km²)",
+      position = tm_pos_out("right", "center")
+    )
+  ) +
+  tm_text(text = "rgn_key", size = 0.7, col = "grey20") +
+  tm_compass(type = "8star", size = 2, position = c("right", "top")) +
+  tm_scalebar(position = c("left", "bottom")) +
+  tm_options(component.autoscale = FALSE) +
+  tm_title(paste0("Suitable ", species_name,
+  " Areas by EEZ in the West Coast"), size = 1)
+
+# Create a table
+
+table <- map |> 
+  select(rgn_id, area, area_km2) |>
+  arrange(desc(area)) |>
+  mutate(pct_suitable = area / area_km2 * 100) |>
+  st_drop_geometry()
+
+return(list(map_species, table))
+
+}
+```
+
+# Results
+
+## Osysters
+For oyster species, inputting:
+
+- 11- 30 (°C)
+- 0 - 70 (meters)
+- Oysters
+
+```{r}
+#| label: map for oyster 
+#| fig-cap: Map of the West Coast showcasing the suitable areas that meet several oyster's requirements for aquaculture possibilites based on Exclusive Economic Zones. 
+#| warning: false
+#| fig-width: 6
+#| fig-height: 5
+# Verify function by using oysters
+oyster <- eez_species(11, 30, 0, -70, 'Oysters')
+oyster[[1]]
+```
+
+
+```{r}
+#| label: table for oysters
+#| tbl-cap: Table depicting the total area (Km^2) by EEZ regions in the West Coast for several oyster species.
+# Make a table for blue mussel
+knitr::kable(oyster[[2]],
+digits = 2, col.names = c("EEZ Region",
+      " Suitable Area (km²)",
+      "Total EEZ Area (km²)",
+      "Suitable (%)"))
+```
+
+The best EEZ region for oysters is in Central California with 2.16% of the total area being suitable and 1.61% within Southern California
+
+## Blue mussels
+
+For blue mussels, inputting:
+
+- 5 - 20 (°C)
+- 0 - 60 (meters)
+- Blue Mussels
+
+```{r}
+#| label: map for blue mussel
+#| fig-cap: Map of the West Coast showcasing the suitable areas that meet the Blue Mussel's requirements for aquaculture possibilites based on Exclusive Economic Zones.
+#| warning: false
+#| fig-width: 6
+#| fig-height: 5
+# Use function for blue mussel
+blue_mussels <- eez_species(5, 20, 0, -60, 'Blue Mussel')
+blue_mussels[[1]]
+```
+
+```{r}
+#| label: table for blue mussel
+#| tbl-cap: Table depicting the total area (Km^2) by EEZ regions in the West Coast for Blue Mussel species.
+# Make a table for blue mussel
+knitr::kable(blue_mussels[[2]],
+digits = 2, col.names = c("EEZ Region",
+      " Suitable Area (km²)",
+      "Total EEZ Area (km²)",
+      "Suitable (%)"))
+```
+The best EEZ region for blue mussels is in Washington with 9.78% of the total area being suitable and 1.93% within Central California
+
+# Discussion
+
+The different requirements per species resulted in different suitable geographic regions on the West Coast. The blue mussels are inclined to colder waters, such as those found in Washingoton, while oysters are inclined to slightly warmer waters, from Central to Southern California, for optimal growth. A limitation that may impact these results can come from the sea surface temperature data ranging from 2008 to 2012, which may need to be expanded in order to capture the patterns of annual or seasonal changes, expecially within the 2020's as there have been numerous record breaking temperatures. For blue mussels, warming waters affects growth not ocean acidification (OA) though the study was limited to adults excluding larval stage (Matoo et al. 2021). OA may not be a factor into blue mussel growth, but there could be others that could increase or decrease the suitable zones beyond temperature and depth. The ocean can be limited by national jurisdiction by the military or even energy production which reduces the available space for aquaculture (Gentry et al. 2017).
+
+## Future direction
+
+1. **Demands:** High demands on resources can intensify animal farming and inputs such as energy or ecosystem services like nutrient cycling (Hall et al. 2011).
+2. **Development:** To further understand future development of marine aquaculture across the world, research and policy development is needed on the integration of growth potential with economic and social aspects that coincide with aquaculture (Gentry et al. 2017).
+3. **Consideration:** Several communities are dependent on traditional fisheries and would benefit from consideration by integrating social, political, cultural, ecological dimensions into aquaculture planning where policymakers can practice expansion rather than replacement and support an equitable and sustainable seafood future ().
+
+
+
+# References
+
+Gentry, R.R., Froehlich, H.E., Grimm, D. et al. Mapping the global potential for marine aquaculture. Nat Ecol Evol 1, 1317–1324 (2017). [available here](https://doi.org/10.1038/s41559-017-0257-9)
+
+Hall, S. J., Delaporte, A., Phillips, M. J., Beveridge, M. & O’Keefe, M. Blue Frontiers: Managing the Environmental Costs of Aquaculture (The WorldFish Center, Penang, Malaysia, 2011) [available here](https://digitalarchive.worldfishcenter.org/items/2d506b5a-74ca-4a3c-aa20-b2fa56feeb29)
+
+Matoo OB, Lannig G, Bock C, Sokolova IM. Temperature but not ocean acidification affects energy metabolism and enzyme activities in the blue mussel, Mytilus edulis. Ecol Evol. 2021; 11: 3366–3379. [available here](https://doi.org/10.1002/ece3.7289)
+
+Sierra Castillo, L., Ferguson Irlanda, C.E., Gómez Andújar, N. et al. To feed the world, recognize the interconnectedness of aquaculture and fisheries. npj Ocean Sustain 5, 34 (2026). [available here](https://doi.org/10.1038/s44183-026-00197-y)
+
+United Nations. (2022). Goal 14: Conserve and sustainably use the oceans, seas and marine resources. United Nations Sustainable Development; United Nations. [available here](https://www.un.org/sustainabledevelopment/oceans/)
+
+What is the “EEZ?” - NOAA ocean exploration. (2020, July 29). NOAA Ocean Exploration. [available here](https://oceanexplorer.noaa.gov/ocean-fact/useez/)
