@@ -513,16 +513,18 @@ ax2.set_title('Palisades Perimeter',
 
 ## Visualize an EJI variable
 
-Examine the effects of the fires' impact on communities who face poverty defined as having income below 200% of federal poverty level. The data is from U.S. Census Bureau American Community Survey (ACS) from the years 2018 to 2022.
+Examine the effects of the fires' impact on communities who face poverty, defined as having income below 200% of federal poverty level, aged 65 or older, or reported as minority. The data is from U.S. Census Bureau American Community Survey (ACS) from the years 2018 to 2022.
 
-Three eji_variables:
+Three eji_variables to be mapped are:
 
 - Use `E_POV200`: Percentage of persons with income below 200% of federal poverty level
 - Use `E_AGE65`: Estimates of the percent of population aged 65 and older in each census tract were
 then sorted and assigned a percentile ranking.
 - Use `E_MINRTY`
 
-These three choices will show the affects of the fires in a temporal case: before, during, and after.
+These three choices will show the affects of the fires in a temporal case: before, during, and after. Those who are affected before the disaster event, during, and conitnue to be impacted even long after.
+
+The first map depicts those in Palisades and Eaton who identified over the age of 65 or older. The Palisades map depicts a larger portion than in Eaton.
 
 ```{python}
 #| warning: false
@@ -578,6 +580,8 @@ plt.tight_layout()
 plt.show()
 ```
 
+Neither Palisades or Eaton have a large depiction of those who identify as facing poverty, though Eaton may have slightly more representation of individuals facing hardship.
+
 ```{python}
 #| warning: false
 fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(10, 4))
@@ -631,6 +635,7 @@ plt.tight_layout()
 plt.show()
 ```
 
+Minorities have been indentified to be in the Eaton area, more so than Palisades.
 
 ```{python}
 #| warning: false
@@ -698,6 +703,8 @@ I chose three EJI variables to examine the city of Palisades and Eaton pertainin
 # References
 
 County of Los Angeles. (2025). *Palisades and Eaton dissolved fire perimeters* \[Dataset\]. ArcGIS Hub. https://hub.arcgis.com/maps/ad51845ea5fb4eb483bc2a7c38b2370c
+
+CDC. (2024, December 3). EJI data download. Place and Health - Geospatial Research, Analysis, and Services Program (GRASP). (https://www.atsdr.cdc.gov/place-health/php/eji/eji-data-download.html)
 
 NASA. (2025, December 8). *Why is that forest red and that cloud blue? How to interpret a false-color satellite image*. https://science.nasa.gov/earth/earth-observatory/how-to-interpret-a-false-color-satellite-image/
 
