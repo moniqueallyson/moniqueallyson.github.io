@@ -22,7 +22,7 @@ editor_options:
 
 # Background
 
-## What is the Future of Food Security? 
+## What is the Future of Food Security?
 
 Marine aquaculture has the potential to be a more sustainable option to create future food security than the alternative land-based approach as the rising human population is estimated to reach 10 billion by 2050 (Gentry et al, 2017). Traditional farming is highly resource intensive. Beef production uses 61.1kg of grain and 28 kg for pork production, while 1 kg of finfish would use less than 13.5 kg of grain (Hall et al. 2011). Despite the promising solution, there is very little known about the areas on where species can thrive and aquacultures can succeed. Gentry et al. calculated the growth performance index and spatially assessed the location for general growing potential for suitable fish and bivalves (2017).
 
@@ -40,10 +40,10 @@ This analysis determines the suitable locations along the west coast for several
 
 Suitable growing conditions are dependent on sea surface temperature and ocean depth for species' optimal growth.
 
-| Species | Depth | Sea Surface Temperature |
-| --- | --- | --- |
-| Oyster | 0 - 70 meters below | 11- 30 °C|
-| Blue Mussel | 0 - 60 meters below | 5 - 20 °C |
+| Species     | Depth               | Sea Surface Temperature |
+|-------------|---------------------|-------------------------|
+| Oyster      | 0 - 70 meters below | 11- 30 °C               |
+| Blue Mussel | 0 - 60 meters below | 5 - 20 °C               |
 
 Blue mussels, *Mytilus edulis*, are eurythermal and well adapted to temperatures of 5–20 °C, with an upper thermal tolerance limit of about 29 °C for adults (Matoo et al. 2021). The depth for blue mussels was found on the website [SeaLifeBase](https://www.sealifebase.ca/search.php) and the oyster's information was given by the instructor.
 
@@ -77,10 +77,10 @@ library(kableExtra) # tables
 The table represents the datasets that are used throughout this analysis in order to discover the locations for potential aquaculture in the West Coast region.
 
 | Dataset | Description | Source |
-| --- | --- | --- |
+|------------------------|------------------------|------------------------|
 | Bathymetry (depth) | Charecterize the depth of the ocean | [General Bathymetric Chart of the ceans](https://www.gebco.net/data-products/gridded-bathymetry-data#area) |
 | Exclusive Exonomic Zones (West Coast Region) | Martitime boundaries use for the creation of species distribtion lists per country | [Marine Regions](https://www.marineregions.org/eez.php) |
-| Average Annual Sea Surface Temperature| from the years 2008 to 2012 within the region| [NOAA](https://coralreefwatch.noaa.gov/product/5km/index_5km_ssta.php)|
+| Average Annual Sea Surface Temperature | from the years 2008 to 2012 within the region | [NOAA](https://coralreefwatch.noaa.gov/product/5km/index_5km_ssta.php) |
 
 ### Load and inspect data
 
@@ -228,11 +228,11 @@ eez_raster <- rasterize(eez_data, suitable_zones, field = "rgn_id")
 
 The EEZ raster values 1 through 5 are assigned as the following:
 
-1. Oregon
-2. Northern California
-3. Central California
-4. Southern California
-5. Washington
+1.  Oregon
+2.  Northern California
+3.  Central California
+4.  Southern California
+5.  Washington
 
 ```{r}
 #| label: Plotting EEZ 
@@ -244,7 +244,8 @@ plot(eez_raster, axes = FALSE)
 
 ### Step 4. Calculate the suitable areas within each EEZ region
 
-Before moving onto any other spatial operations, `cellSize()` was used to compute the true area (km^2) of each cell to determine the suitable locations within EEZ.
+Before moving onto any other spatial operations, `cellSize()` was used to compute the true area (km\^2) of each cell to determine the suitable locations within EEZ.
+
 ```{r}
 # Calculate cell size
 cell_size <- cellSize(suitable_zones, unit = "km", mask = TRUE)
@@ -265,6 +266,7 @@ desired_zone <- zonal(suitable_zmask,eez_raster, fun = 'sum', na.rm = TRUE)
 ```
 
 A table was created to show the total suitable area found inside EEZ for oysters.
+
 ```{r}
 #| label: table for area in EEZ
 #| tbl-cap: Suitable area (km^2) in EEZ by region
@@ -276,6 +278,7 @@ desired_zone |>
 ### Step 5. Join results to EEZ regions and map suitable location
 
 Before mapping, the suitable areas are inputted into a tibble to the `left_join()` with EEZ.
+
 ```{r}
 # Create a tibble
 z_tibble <- as_tibble(desired_zone)
@@ -462,6 +465,7 @@ return(list(map_species, table))
 # Results
 
 ## Osysters
+
 For oyster species, inputting:
 
 - 11- 30 (°C)
@@ -478,7 +482,6 @@ For oyster species, inputting:
 oyster <- eez_species(11, 30, 0, -70, 'Oysters')
 oyster[[1]]
 ```
-
 
 ```{r}
 #| label: table for oysters
@@ -522,6 +525,7 @@ digits = 2, col.names = c("EEZ Region",
       "Total EEZ Area (km²)",
       "Suitable (%)"))
 ```
+
 The best EEZ region for blue mussels is in Washington with 9.78% of the total area being suitable and 1.93% within Central California
 
 # Discussion
@@ -530,11 +534,9 @@ The different requirements per species resulted in different suitable geographic
 
 ## Future direction
 
-1. **Demands:** High demands on resources can intensify animal farming and inputs such as energy or ecosystem services like nutrient cycling (Hall et al. 2011).
-2. **Development:** To further understand future development of marine aquaculture across the world, research and policy development is needed on the integration of growth potential with economic and social aspects that coincide with aquaculture (Gentry et al. 2017).
-3. **Consideration:** Several communities are dependent on traditional fisheries and would benefit from consideration by integrating social, political, cultural, ecological dimensions into aquaculture planning where policymakers can practice expansion rather than replacement and support an equitable and sustainable seafood future ().
-
-
+1.  **Demands:** High demands on resources can intensify animal farming and inputs such as energy or ecosystem services like nutrient cycling (Hall et al. 2011).
+2.  **Development:** To further understand future development of marine aquaculture across the world, research and policy development is needed on the integration of growth potential with economic and social aspects that coincide with aquaculture (Gentry et al. 2017).
+3.  **Consideration:** Several communities are dependent on traditional fisheries and would benefit from consideration by integrating social, political, cultural, ecological dimensions into aquaculture planning where policymakers can practice expansion rather than replacement and support an equitable and sustainable seafood future ().
 
 # References
 
